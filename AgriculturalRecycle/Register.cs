@@ -157,6 +157,7 @@ namespace AgriculturalRecycle
                     var dt = DBhelper.ExecuteNonQuery(sql,new MySqlParameter[] { new MySqlParameter("@Account", Account), new MySqlParameter("@Password", password), new MySqlParameter("@UserName", UserName), new MySqlParameter("@Email", Email) });
                     if (dt> 0)
                     {
+                        string sql1 = "insert into user_info(Account,UserName,Email) values (@Account)";
                         MessageBox.Show("注册成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         uiButton1.Enabled = false;
                         Login login = new Login();

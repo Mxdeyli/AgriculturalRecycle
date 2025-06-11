@@ -87,6 +87,7 @@
             this.uiTextBox1.TabIndex = 2;
             this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiTextBox1.Watermark = "";
+            this.uiTextBox1.TextChanged += new System.EventHandler(this.uiTextBox1_TextChanged);
             // 
             // flowLayoutPanel1
             // 
@@ -144,6 +145,7 @@
             this.uiButton3.TabIndex = 22;
             this.uiButton3.Text = "更换头像";
             this.uiButton3.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton3.Click += new System.EventHandler(this.uiButton3_Click);
             // 
             // uiRichTextBox1
             // 
@@ -293,6 +295,7 @@
             this.uiButton1.TabIndex = 5;
             this.uiButton1.Text = "保存编辑";
             this.uiButton1.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
             // 
             // uiLabel3
             // 
@@ -330,6 +333,7 @@
             this.Name = "Edit";
             this.Text = "Edit";
             this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 1582, 953);
+            this.Load += new System.EventHandler(this.Edit_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.uiPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

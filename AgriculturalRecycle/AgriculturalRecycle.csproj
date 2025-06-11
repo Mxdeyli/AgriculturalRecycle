@@ -112,6 +112,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commodity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commodity.Designer.cs">
+      <DependentUpon>Commodity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Edit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping_Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopping_Cart.Designer.cs">
+      <DependentUpon>Shopping_Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAccount.Designer.cs">
+      <DependentUpon>UpdateAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Verification\AuthService.cs" />
     <Compile Include="Verification\CreateImage.cs" />
@@ -198,6 +216,9 @@
     <Compile Include="UserManage.Designer.cs">
       <DependentUpon>UserManage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Commodity.resx">
+      <DependentUpon>Commodity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Device_BORE.resx">
       <DependentUpon>Device_BORE.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +253,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopping_Cart.resx">
+      <DependentUpon>Shopping_Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAccount.resx">
+      <DependentUpon>UpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserManage.resx">
       <DependentUpon>UserManage.cs</DependentUpon>
@@ -279,6 +306,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\store.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weixinpay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alipay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\66257063_p0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weixinpay1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-789f511feeb8b0f1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

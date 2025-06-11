@@ -46,7 +46,7 @@ namespace AgriculturalRecycle
             }
         }
 
-        public static object ExecuteScalar(string sql, MySqlParameter[] parameters)
+        public static object ExecuteScalar(string sql, MySqlParameter[] parameters)//执行查询并返回单个值
         {
             using (var conn = GetConnection())
             {

@@ -15,9 +15,9 @@ namespace AgriculturalRecycle
             V3 = v3;
         }
 
-        public int UserID { get; set; }
-        public string Username { get; set; }
-        public string UserType { get;set; }
+        public int UserID { get {return V1; } set { value = V1; } }
+        public string Username { get { return V2; }set { value = V2; } }
+        public string UserType { get {return V3; } set { value = V3; } }
         public int V1 { get; }
         public string V2 { get; }
         public string V3 { get; }

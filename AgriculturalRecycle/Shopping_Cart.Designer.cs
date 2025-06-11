@@ -1,6 +1,6 @@
 ﻿namespace AgriculturalRecycle
 {
-    partial class Device_BORE
+    partial class Shopping_Cart
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Device_BORE));
-            this.uiButton1 = new Sunny.UI.UIButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shopping_Cart));
             this.SuspendLayout();
             // 
-            // uiButton1
-            // 
-            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(1036, 228);
-            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton1.Name = "uiButton1";
-            this.uiButton1.Size = new System.Drawing.Size(100, 35);
-            this.uiButton1.TabIndex = 0;
-            this.uiButton1.Text = "返回首页";
-            this.uiButton1.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
-            // 
-            // Device_BORE
+            // Shopping_Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1582, 953);
-            this.Controls.Add(this.uiButton1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Device_BORE";
-            this.Text = "Device_BORE";
+            this.Name = "Shopping_Cart";
+            this.Text = "Shopping_Cart";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Sunny.UI.UIButton uiButton1;
     }
 }
