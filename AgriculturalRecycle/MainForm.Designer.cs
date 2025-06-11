@@ -34,9 +34,6 @@
             this.uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.uiPanel1 = new Sunny.UI.UIPanel();
-            this.uiImageButton3 = new Sunny.UI.UIImageButton();
-            this.uiImageButton2 = new Sunny.UI.UIImageButton();
-            this.uiImageButton1 = new Sunny.UI.UIImageButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -44,13 +41,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.uiPanel2 = new Sunny.UI.UIPanel();
-            this.uiLine1 = new Sunny.UI.UILine();
-            this.uiLabel1 = new Sunny.UI.UILabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.uiLabel2 = new Sunny.UI.UILabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.uiButton3 = new Sunny.UI.UIButton();
             this.uiButton4 = new Sunny.UI.UIButton();
@@ -61,16 +51,26 @@
             this.uiButton9 = new Sunny.UI.UIButton();
             this.uiButton10 = new Sunny.UI.UIButton();
             this.uiAvatar1 = new Sunny.UI.UIAvatar();
-            this.uiLabel3 = new Sunny.UI.UILabel();
+            this.uiImageButton3 = new Sunny.UI.UIImageButton();
+            this.uiImageButton2 = new Sunny.UI.UIImageButton();
+            this.uiImageButton1 = new Sunny.UI.UIImageButton();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.uiPanel3 = new Sunny.UI.UIPanel();
-            this.uiLabel4 = new Sunny.UI.UILabel();
-            this.uiLine2 = new Sunny.UI.UILine();
-            this.uiLabel5 = new Sunny.UI.UILabel();
-            this.uiLabel6 = new Sunny.UI.UILabel();
-            this.uiLabel7 = new Sunny.UI.UILabel();
-            this.uiLabel8 = new Sunny.UI.UILabel();
-            this.uiLabel9 = new Sunny.UI.UILabel();
             this.uiLabel10 = new Sunny.UI.UILabel();
+            this.uiLabel9 = new Sunny.UI.UILabel();
+            this.uiLabel8 = new Sunny.UI.UILabel();
+            this.uiLabel7 = new Sunny.UI.UILabel();
+            this.uiLabel6 = new Sunny.UI.UILabel();
+            this.uiLabel5 = new Sunny.UI.UILabel();
+            this.uiLine2 = new Sunny.UI.UILine();
+            this.uiLabel4 = new Sunny.UI.UILabel();
+            this.uiLabel3 = new Sunny.UI.UILabel();
+            this.uiPanel2 = new Sunny.UI.UIPanel();
+            this.uiLine1 = new Sunny.UI.UILine();
+            this.uiLabel1 = new Sunny.UI.UILabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.uiLabel2 = new Sunny.UI.UILabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.uiTabControlMenu1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.uiPanel1.SuspendLayout();
@@ -78,10 +78,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).BeginInit();
             this.tabPage6.SuspendLayout();
+            this.uiPanel3.SuspendLayout();
             this.uiPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.uiPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // uiButton1
@@ -168,59 +168,6 @@
             this.uiPanel1.Text = null;
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiImageButton3
-            // 
-            this.uiImageButton3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.uiImageButton3.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.store;
-            this.uiImageButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.uiImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiImageButton3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiImageButton3.Location = new System.Drawing.Point(3, 0);
-            this.uiImageButton3.Name = "uiImageButton3";
-            this.uiImageButton3.Size = new System.Drawing.Size(1440, 402);
-            this.uiImageButton3.TabIndex = 5;
-            this.uiImageButton3.TabStop = false;
-            this.uiImageButton3.Text = null;
-            this.uiImageButton3.Visible = false;
-            this.uiImageButton3.Click += new System.EventHandler(this.uiImageButton3_Click);
-            // 
-            // uiImageButton2
-            // 
-            this.uiImageButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.uiImageButton2.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.Guan;
-            this.uiImageButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.uiImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiImageButton2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiImageButton2.Location = new System.Drawing.Point(3, -2);
-            this.uiImageButton2.Name = "uiImageButton2";
-            this.uiImageButton2.Size = new System.Drawing.Size(1433, 402);
-            this.uiImageButton2.TabIndex = 4;
-            this.uiImageButton2.TabStop = false;
-            this.uiImageButton2.Text = null;
-            this.uiImageButton2.Visible = false;
-            this.uiImageButton2.Click += new System.EventHandler(this.uiImageButton2_Click);
-            // 
-            // uiImageButton1
-            // 
-            this.uiImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.uiImageButton1.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.Zushebei;
-            this.uiImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiImageButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiImageButton1.Location = new System.Drawing.Point(3, -2);
-            this.uiImageButton1.Name = "uiImageButton1";
-            this.uiImageButton1.Size = new System.Drawing.Size(1433, 402);
-            this.uiImageButton1.TabIndex = 3;
-            this.uiImageButton1.TabStop = false;
-            this.uiImageButton1.Text = null;
-            this.uiImageButton1.Click += new System.EventHandler(this.uiImageButton1_Click);
-            // 
             // radioButton3
             // 
             this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -290,90 +237,6 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "留言建议";
             this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.BackgroundImage = global::AgriculturalRecycle.Properties.Resources._66257063_p0;
-            this.tabPage6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage6.Controls.Add(this.uiPanel3);
-            this.tabPage6.Controls.Add(this.uiLabel3);
-            this.tabPage6.Controls.Add(this.uiPanel2);
-            this.tabPage6.Location = new System.Drawing.Point(201, 0);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1443, 889);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "帮助";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // uiPanel2
-            // 
-            this.uiPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiPanel2.Controls.Add(this.uiLine1);
-            this.uiPanel2.Controls.Add(this.uiLabel1);
-            this.uiPanel2.Controls.Add(this.pictureBox2);
-            this.uiPanel2.Controls.Add(this.uiLabel2);
-            this.uiPanel2.Controls.Add(this.pictureBox1);
-            this.uiPanel2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiPanel2.Location = new System.Drawing.Point(873, 447);
-            this.uiPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiPanel2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiPanel2.Name = "uiPanel2";
-            this.uiPanel2.Size = new System.Drawing.Size(550, 422);
-            this.uiPanel2.TabIndex = 4;
-            this.uiPanel2.Text = null;
-            this.uiPanel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.uiPanel2.Click += new System.EventHandler(this.uiPanel2_Click);
-            // 
-            // uiLine1
-            // 
-            this.uiLine1.BackColor = System.Drawing.Color.Transparent;
-            this.uiLine1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLine1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLine1.Location = new System.Drawing.Point(0, 90);
-            this.uiLine1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiLine1.Name = "uiLine1";
-            this.uiLine1.Size = new System.Drawing.Size(547, 18);
-            this.uiLine1.TabIndex = 4;
-            // 
-            // uiLabel1
-            // 
-            this.uiLabel1.Font = new System.Drawing.Font("华文琥珀", 40F);
-            this.uiLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel1.Location = new System.Drawing.Point(3, 21);
-            this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(345, 90);
-            this.uiLabel1.TabIndex = 0;
-            this.uiLabel1.Text = "支持作者";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.alipay;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(286, 152);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // uiLabel2
-            // 
-            this.uiLabel2.Font = new System.Drawing.Font("华文琥珀", 18F);
-            this.uiLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.uiLabel2.Location = new System.Drawing.Point(9, 111);
-            this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(287, 38);
-            this.uiLabel2.TabIndex = 1;
-            this.uiLabel2.Text = "请作者喝杯咖啡吧！";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.weixinpay1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 152);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // tabPage7
             // 
@@ -494,6 +357,8 @@
             // uiAvatar1
             // 
             this.uiAvatar1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiAvatar1.Icon = Sunny.UI.UIAvatar.UIIcon.Image;
+            this.uiAvatar1.Image = global::AgriculturalRecycle.Properties.Resources._76e802b42db9a6ce;
             this.uiAvatar1.Location = new System.Drawing.Point(13, 38);
             this.uiAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar1.Name = "uiAvatar1";
@@ -502,16 +367,72 @@
             this.uiAvatar1.Text = "uiAvatar1";
             this.uiAvatar1.Click += new System.EventHandler(this.uiAvatar1_Click);
             // 
-            // uiLabel3
+            // uiImageButton3
             // 
-            this.uiLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.uiLabel3.Font = new System.Drawing.Font("华文琥珀", 55F);
-            this.uiLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.uiLabel3.Location = new System.Drawing.Point(406, 106);
-            this.uiLabel3.Name = "uiLabel3";
-            this.uiLabel3.Size = new System.Drawing.Size(689, 113);
-            this.uiLabel3.TabIndex = 5;
-            this.uiLabel3.Text = "平台版本7.4.9";
+            this.uiImageButton3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiImageButton3.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.store;
+            this.uiImageButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.uiImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiImageButton3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiImageButton3.Location = new System.Drawing.Point(3, 0);
+            this.uiImageButton3.Name = "uiImageButton3";
+            this.uiImageButton3.Size = new System.Drawing.Size(1440, 402);
+            this.uiImageButton3.TabIndex = 5;
+            this.uiImageButton3.TabStop = false;
+            this.uiImageButton3.Text = null;
+            this.uiImageButton3.Visible = false;
+            this.uiImageButton3.Click += new System.EventHandler(this.uiImageButton3_Click);
+            // 
+            // uiImageButton2
+            // 
+            this.uiImageButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiImageButton2.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.Guan;
+            this.uiImageButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.uiImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiImageButton2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiImageButton2.Location = new System.Drawing.Point(3, -2);
+            this.uiImageButton2.Name = "uiImageButton2";
+            this.uiImageButton2.Size = new System.Drawing.Size(1433, 402);
+            this.uiImageButton2.TabIndex = 4;
+            this.uiImageButton2.TabStop = false;
+            this.uiImageButton2.Text = null;
+            this.uiImageButton2.Visible = false;
+            this.uiImageButton2.Click += new System.EventHandler(this.uiImageButton2_Click);
+            // 
+            // uiImageButton1
+            // 
+            this.uiImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiImageButton1.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.Zushebei;
+            this.uiImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiImageButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiImageButton1.Location = new System.Drawing.Point(3, -2);
+            this.uiImageButton1.Name = "uiImageButton1";
+            this.uiImageButton1.Size = new System.Drawing.Size(1433, 402);
+            this.uiImageButton1.TabIndex = 3;
+            this.uiImageButton1.TabStop = false;
+            this.uiImageButton1.Text = null;
+            this.uiImageButton1.Click += new System.EventHandler(this.uiImageButton1_Click);
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackgroundImage = global::AgriculturalRecycle.Properties.Resources._66257063_p0;
+            this.tabPage6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage6.Controls.Add(this.uiPanel3);
+            this.tabPage6.Controls.Add(this.uiLabel3);
+            this.tabPage6.Controls.Add(this.uiPanel2);
+            this.tabPage6.Location = new System.Drawing.Point(201, 0);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(1443, 889);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "帮助";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // uiPanel3
             // 
@@ -530,17 +451,68 @@
             this.uiPanel3.Name = "uiPanel3";
             this.uiPanel3.Size = new System.Drawing.Size(638, 422);
             this.uiPanel3.TabIndex = 6;
+            this.uiPanel3.Text = null;
             this.uiPanel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiLabel4
+            // uiLabel10
             // 
-            this.uiLabel4.Font = new System.Drawing.Font("华文琥珀", 40F);
-            this.uiLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel4.Location = new System.Drawing.Point(3, 21);
-            this.uiLabel4.Name = "uiLabel4";
-            this.uiLabel4.Size = new System.Drawing.Size(326, 65);
-            this.uiLabel4.TabIndex = 0;
-            this.uiLabel4.Text = "联系作者";
+            this.uiLabel10.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Underline);
+            this.uiLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel10.Location = new System.Drawing.Point(8, 152);
+            this.uiLabel10.Name = "uiLabel10";
+            this.uiLabel10.Size = new System.Drawing.Size(236, 43);
+            this.uiLabel10.TabIndex = 7;
+            this.uiLabel10.Text = "AR358161794";
+            // 
+            // uiLabel9
+            // 
+            this.uiLabel9.Font = new System.Drawing.Font("华文琥珀", 18F);
+            this.uiLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.uiLabel9.Location = new System.Drawing.Point(9, 105);
+            this.uiLabel9.Name = "uiLabel9";
+            this.uiLabel9.Size = new System.Drawing.Size(150, 30);
+            this.uiLabel9.TabIndex = 6;
+            this.uiLabel9.Text = "微信:";
+            // 
+            // uiLabel8
+            // 
+            this.uiLabel8.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Underline);
+            this.uiLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel8.Location = new System.Drawing.Point(8, 379);
+            this.uiLabel8.Name = "uiLabel8";
+            this.uiLabel8.Size = new System.Drawing.Size(542, 43);
+            this.uiLabel8.TabIndex = 5;
+            this.uiLabel8.Text = "natsumetooru13@gmail.com";
+            // 
+            // uiLabel7
+            // 
+            this.uiLabel7.Font = new System.Drawing.Font("华文琥珀", 18F);
+            this.uiLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.uiLabel7.Location = new System.Drawing.Point(9, 334);
+            this.uiLabel7.Name = "uiLabel7";
+            this.uiLabel7.Size = new System.Drawing.Size(150, 30);
+            this.uiLabel7.TabIndex = 4;
+            this.uiLabel7.Text = "电子邮箱:";
+            // 
+            // uiLabel6
+            // 
+            this.uiLabel6.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Underline);
+            this.uiLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel6.Location = new System.Drawing.Point(3, 258);
+            this.uiLabel6.Name = "uiLabel6";
+            this.uiLabel6.Size = new System.Drawing.Size(236, 43);
+            this.uiLabel6.TabIndex = 3;
+            this.uiLabel6.Text = "13326777000";
+            // 
+            // uiLabel5
+            // 
+            this.uiLabel5.Font = new System.Drawing.Font("华文琥珀", 18F);
+            this.uiLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.uiLabel5.Location = new System.Drawing.Point(9, 212);
+            this.uiLabel5.Name = "uiLabel5";
+            this.uiLabel5.Size = new System.Drawing.Size(150, 30);
+            this.uiLabel5.TabIndex = 2;
+            this.uiLabel5.Text = "手机号码:";
             // 
             // uiLine2
             // 
@@ -553,65 +525,96 @@
             this.uiLine2.Size = new System.Drawing.Size(635, 12);
             this.uiLine2.TabIndex = 1;
             // 
-            // uiLabel5
+            // uiLabel4
             // 
-            this.uiLabel5.Font = new System.Drawing.Font("华文琥珀", 18F);
-            this.uiLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.uiLabel5.Location = new System.Drawing.Point(9, 212);
-            this.uiLabel5.Name = "uiLabel5";
-            this.uiLabel5.Size = new System.Drawing.Size(150, 30);
-            this.uiLabel5.TabIndex = 2;
-            this.uiLabel5.Text = "手机号码:";
+            this.uiLabel4.Font = new System.Drawing.Font("华文琥珀", 40F);
+            this.uiLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel4.Location = new System.Drawing.Point(3, 21);
+            this.uiLabel4.Name = "uiLabel4";
+            this.uiLabel4.Size = new System.Drawing.Size(326, 65);
+            this.uiLabel4.TabIndex = 0;
+            this.uiLabel4.Text = "联系作者";
             // 
-            // uiLabel6
+            // uiLabel3
             // 
-            this.uiLabel6.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Underline);
-            this.uiLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel6.Location = new System.Drawing.Point(3, 258);
-            this.uiLabel6.Name = "uiLabel6";
-            this.uiLabel6.Size = new System.Drawing.Size(236, 43);
-            this.uiLabel6.TabIndex = 3;
-            this.uiLabel6.Text = "13326777000";
+            this.uiLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiLabel3.Font = new System.Drawing.Font("华文琥珀", 55F);
+            this.uiLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.uiLabel3.Location = new System.Drawing.Point(406, 106);
+            this.uiLabel3.Name = "uiLabel3";
+            this.uiLabel3.Size = new System.Drawing.Size(689, 113);
+            this.uiLabel3.TabIndex = 5;
+            this.uiLabel3.Text = "平台版本7.4.9";
             // 
-            // uiLabel7
+            // uiPanel2
             // 
-            this.uiLabel7.Font = new System.Drawing.Font("华文琥珀", 18F);
-            this.uiLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.uiLabel7.Location = new System.Drawing.Point(9, 334);
-            this.uiLabel7.Name = "uiLabel7";
-            this.uiLabel7.Size = new System.Drawing.Size(150, 30);
-            this.uiLabel7.TabIndex = 4;
-            this.uiLabel7.Text = "电子邮箱:";
+            this.uiPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiPanel2.Controls.Add(this.uiLine1);
+            this.uiPanel2.Controls.Add(this.uiLabel1);
+            this.uiPanel2.Controls.Add(this.pictureBox2);
+            this.uiPanel2.Controls.Add(this.uiLabel2);
+            this.uiPanel2.Controls.Add(this.pictureBox1);
+            this.uiPanel2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiPanel2.Location = new System.Drawing.Point(873, 447);
+            this.uiPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiPanel2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiPanel2.Name = "uiPanel2";
+            this.uiPanel2.Size = new System.Drawing.Size(550, 422);
+            this.uiPanel2.TabIndex = 4;
+            this.uiPanel2.Text = null;
+            this.uiPanel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.uiPanel2.Click += new System.EventHandler(this.uiPanel2_Click);
             // 
-            // uiLabel8
+            // uiLine1
             // 
-            this.uiLabel8.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Underline);
-            this.uiLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel8.Location = new System.Drawing.Point(8, 379);
-            this.uiLabel8.Name = "uiLabel8";
-            this.uiLabel8.Size = new System.Drawing.Size(542, 43);
-            this.uiLabel8.TabIndex = 5;
-            this.uiLabel8.Text = "natsumetooru13@gmail.com";
+            this.uiLine1.BackColor = System.Drawing.Color.Transparent;
+            this.uiLine1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLine1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLine1.Location = new System.Drawing.Point(0, 90);
+            this.uiLine1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine1.Name = "uiLine1";
+            this.uiLine1.Size = new System.Drawing.Size(547, 18);
+            this.uiLine1.TabIndex = 4;
             // 
-            // uiLabel9
+            // uiLabel1
             // 
-            this.uiLabel9.Font = new System.Drawing.Font("华文琥珀", 18F);
-            this.uiLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.uiLabel9.Location = new System.Drawing.Point(9, 105);
-            this.uiLabel9.Name = "uiLabel9";
-            this.uiLabel9.Size = new System.Drawing.Size(150, 30);
-            this.uiLabel9.TabIndex = 6;
-            this.uiLabel9.Text = "微信:";
+            this.uiLabel1.Font = new System.Drawing.Font("华文琥珀", 40F);
+            this.uiLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel1.Location = new System.Drawing.Point(3, 21);
+            this.uiLabel1.Name = "uiLabel1";
+            this.uiLabel1.Size = new System.Drawing.Size(345, 90);
+            this.uiLabel1.TabIndex = 0;
+            this.uiLabel1.Text = "支持作者";
             // 
-            // uiLabel10
+            // pictureBox2
             // 
-            this.uiLabel10.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Underline);
-            this.uiLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel10.Location = new System.Drawing.Point(8, 152);
-            this.uiLabel10.Name = "uiLabel10";
-            this.uiLabel10.Size = new System.Drawing.Size(236, 43);
-            this.uiLabel10.TabIndex = 7;
-            this.uiLabel10.Text = "AR358161794";
+            this.pictureBox2.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.alipay;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(286, 152);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // uiLabel2
+            // 
+            this.uiLabel2.Font = new System.Drawing.Font("华文琥珀", 18F);
+            this.uiLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.uiLabel2.Location = new System.Drawing.Point(9, 111);
+            this.uiLabel2.Name = "uiLabel2";
+            this.uiLabel2.Size = new System.Drawing.Size(287, 38);
+            this.uiLabel2.TabIndex = 1;
+            this.uiLabel2.Text = "请作者喝杯咖啡吧！";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.weixinpay1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 152);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
@@ -644,10 +647,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).EndInit();
             this.tabPage6.ResumeLayout(false);
+            this.uiPanel3.ResumeLayout(false);
             this.uiPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.uiPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -657,7 +660,6 @@
 
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UIButton uiButton2;
-        private Sunny.UI.UITabControlMenu uiTabControlMenu1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private Sunny.UI.UIButton uiButton3;
@@ -679,7 +681,6 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Sunny.UI.UILabel uiLabel2;
@@ -697,5 +698,7 @@
         private Sunny.UI.UILabel uiLabel9;
         private Sunny.UI.UILabel uiLabel8;
         private Sunny.UI.UILabel uiLabel7;
+        public Sunny.UI.UITabControlMenu uiTabControlMenu1;
+        public System.Windows.Forms.TabPage tabPage6;
     }
 }

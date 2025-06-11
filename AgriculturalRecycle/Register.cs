@@ -132,7 +132,6 @@ namespace AgriculturalRecycle
             {
                 if(uiTextBox2.Text.Trim() == uiTextBox3.Text.Trim())
                 {
-
                     string password = BCrypt.Net.BCrypt.HashPassword(uiTextBox2.Text.Trim());
                     string Account = uiTextBox1.Text.Trim(),UserName = uiTextBox1.Text.Trim(), Email = uiTextBox4.Text.Trim()+arr[uiComboBox1.SelectedIndex];
                     string checkSql = "select count(*) from users where Account=@Account";
@@ -157,7 +156,11 @@ namespace AgriculturalRecycle
                     var dt = DBhelper.ExecuteNonQuery(sql,new MySqlParameter[] { new MySqlParameter("@Account", Account), new MySqlParameter("@Password", password), new MySqlParameter("@UserName", UserName), new MySqlParameter("@Email", Email) });
                     if (dt> 0)
                     {
-                        string sql1 = "insert into user_info(Account,UserName,Email) values (@Account)";
+                        string sql2 = "select UserID from users where Account=@Account";
+                        var userID = DBhelper.ExecuteQuery(sql2, new MySqlParameter[] { new MySqlParameter("@Account", Account) });
+                        int UserID = Convert.ToInt32(userID.Rows[0]["UserID"]);
+                        string sql1 = "insert into userinfo(UserID,UserName,Contact_Way) values (@UserID,@UserName,@Email)";
+                        var dt1 = DBhelper.ExecuteNonQuery(sql1, new MySqlParameter[] { new MySqlParameter("@UserID", UserID), new MySqlParameter("@UserName", UserName), new MySqlParameter("@Email", Email) });
                         MessageBox.Show("注册成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         uiButton1.Enabled = false;
                         Login login = new Login();

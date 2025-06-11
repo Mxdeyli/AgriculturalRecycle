@@ -84,5 +84,10 @@ namespace AgriculturalRecycle
             this.Hide();
             update.Show();
         }
+
+        private void uiAvatar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

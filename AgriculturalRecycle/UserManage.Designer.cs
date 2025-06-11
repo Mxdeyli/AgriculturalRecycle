@@ -54,7 +54,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.返回;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.Location = new System.Drawing.Point(3, 38);
@@ -196,13 +196,14 @@
             this.uiAvatar1.AvatarSize = 220;
             this.uiAvatar1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiAvatar1.Icon = Sunny.UI.UIAvatar.UIIcon.Image;
-            this.uiAvatar1.Image = global::AgriculturalRecycle.Properties.Resources._76e802b42db9a6ce;
+            this.uiAvatar1.Image = ((System.Drawing.Image)(resources.GetObject("uiAvatar1.Image")));
             this.uiAvatar1.Location = new System.Drawing.Point(-4, 3);
             this.uiAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar1.Name = "uiAvatar1";
             this.uiAvatar1.Size = new System.Drawing.Size(225, 222);
             this.uiAvatar1.TabIndex = 0;
             this.uiAvatar1.Text = "uiAvatar1";
+            this.uiAvatar1.Click += new System.EventHandler(this.uiAvatar1_Click);
             // 
             // uiGroupBox1
             // 
@@ -262,7 +263,7 @@
             // UserManage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::AgriculturalRecycle.Properties.Resources._248878_106;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 953);
             this.Controls.Add(this.flowLayoutPanel1);

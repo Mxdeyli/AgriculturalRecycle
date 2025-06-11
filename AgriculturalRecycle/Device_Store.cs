@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AntdUI;
 using Sunny.UI;
 
 namespace AgriculturalRecycle
@@ -30,6 +31,14 @@ namespace AgriculturalRecycle
         private void uiImageButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void uiLabel1_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = new MainForm(_currentUser);
+            this.Hide();
+            mainForm.Show();
+            mainForm.uiTabControlMenu1.SelectedTab = mainForm.tabPage6;
         }
     }
 }
