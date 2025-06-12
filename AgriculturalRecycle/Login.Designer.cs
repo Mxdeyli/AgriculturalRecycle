@@ -44,16 +44,18 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("华文琥珀", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(361, 89);
+            this.label1.Location = new System.Drawing.Point(431, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(901, 69);
             this.label1.TabIndex = 0;
             this.label1.Text = "农业副产物回收设备管理系统";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -88,7 +90,7 @@
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Location = new System.Drawing.Point(681, 284);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 25);
+            this.textBox1.Size = new System.Drawing.Size(250, 30);
             this.textBox1.TabIndex = 3;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -98,7 +100,7 @@
             this.textBox2.Location = new System.Drawing.Point(681, 377);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '';
-            this.textBox2.Size = new System.Drawing.Size(250, 25);
+            this.textBox2.Size = new System.Drawing.Size(250, 30);
             this.textBox2.TabIndex = 4;
             this.textBox2.UseSystemPasswordChar = true;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -173,7 +175,7 @@
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(840, 312);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 15);
+            this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "label4";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -187,7 +189,7 @@
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(840, 405);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 15);
+            this.label5.Size = new System.Drawing.Size(69, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "label5";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -195,9 +197,7 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::AgriculturalRecycle.Properties.Resources._3ecc63fc13fbae52;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 953);
@@ -212,12 +212,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Login";
             this.Text = "登录";
+            this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 1582, 953);
             this.Load += new System.EventHandler(this.Login_Load);
             this.SizeChanged += new System.EventHandler(this.Login_SizeChanged);
             this.Resize += new System.EventHandler(this.Login_Resize);

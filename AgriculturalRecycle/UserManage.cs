@@ -35,11 +35,12 @@ namespace AgriculturalRecycle
                     uiAvatar1.Image = img;
                 }
                 uiLabel1.Text = dt.Rows[0]["UserName"].ToString();
-                uiLabel2.Text = dt.Rows[0]["Personalized_Signature"].ToString();
+                uiLabel2.Text = "个性签名:\n"+dt.Rows[0]["Personalized_Signature"].ToString();
                 uiLabel3.Text = "ID:" + dt.Rows[0]["UserID"].ToString();
                 uiLabel4.Text = "性别:" + dt.Rows[0]["Gender"].ToString();
                 uiLabel5.Text = "信用评分:" + dt.Rows[0]["CreditScore"].ToString();
                 uiLabel6.Text = "年龄:" + dt.Rows[0]["Age"].ToString();
+                uiLabel7.Text="余额:"+dt.Rows[0]["Balance"].ToString();
             }
         }
 

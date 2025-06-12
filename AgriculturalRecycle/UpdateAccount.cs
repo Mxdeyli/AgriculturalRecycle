@@ -11,10 +11,11 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using BCrypt.Net;
+using Sunny.UI;
 
 namespace AgriculturalRecycle
 {
-    public partial class UpdateAccount: Form
+    public partial class UpdateAccount: UIForm
     {
         private readonly User _currentUser;
         private string[] arr = { "@gmail.com", "@163.com", "@qq.com", "@yahoo.com", "@hotmail.com", "@outlook.com" };

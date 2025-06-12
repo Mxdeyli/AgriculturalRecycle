@@ -45,6 +45,7 @@
             this.uiImageButton1 = new Sunny.UI.UIImageButton();
             this.uiGroupBox2 = new Sunny.UI.UIGroupBox();
             this.uiImageListBox1 = new Sunny.UI.UIImageListBox();
+            this.uiLabel7 = new Sunny.UI.UILabel();
             this.flowLayoutPanel1.SuspendLayout();
             this.uiPanel1.SuspendLayout();
             this.uiGroupBox1.SuspendLayout();
@@ -82,6 +83,7 @@
             // 
             // uiPanel1
             // 
+            this.uiPanel1.Controls.Add(this.uiLabel7);
             this.uiPanel1.Controls.Add(this.uiLabel6);
             this.uiPanel1.Controls.Add(this.uiButton2);
             this.uiPanel1.Controls.Add(this.uiLabel5);
@@ -130,7 +132,7 @@
             // 
             this.uiLabel5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel5.Location = new System.Drawing.Point(444, 103);
+            this.uiLabel5.Location = new System.Drawing.Point(448, 80);
             this.uiLabel5.Name = "uiLabel5";
             this.uiLabel5.Size = new System.Drawing.Size(100, 23);
             this.uiLabel5.TabIndex = 6;
@@ -214,7 +216,7 @@
             this.uiGroupBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiGroupBox1.Name = "uiGroupBox1";
             this.uiGroupBox1.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
-            this.uiGroupBox1.Size = new System.Drawing.Size(870, 180);
+            this.uiGroupBox1.Size = new System.Drawing.Size(870, 271);
             this.uiGroupBox1.TabIndex = 1;
             this.uiGroupBox1.Text = "设备库";
             this.uiGroupBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -234,7 +236,7 @@
             // uiGroupBox2
             // 
             this.uiGroupBox2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiGroupBox2.Location = new System.Drawing.Point(4, 431);
+            this.uiGroupBox2.Location = new System.Drawing.Point(4, 522);
             this.uiGroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiGroupBox2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiGroupBox2.Name = "uiGroupBox2";
@@ -249,7 +251,7 @@
             this.uiImageListBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiImageListBox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.uiImageListBox1.ItemSelectForeColor = System.Drawing.Color.White;
-            this.uiImageListBox1.Location = new System.Drawing.Point(4, 733);
+            this.uiImageListBox1.Location = new System.Drawing.Point(4, 824);
             this.uiImageListBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiImageListBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiImageListBox1.Name = "uiImageListBox1";
@@ -259,6 +261,16 @@
             this.uiImageListBox1.TabIndex = 3;
             this.uiImageListBox1.Text = "uiImageListBox1";
             this.uiImageListBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiLabel7
+            // 
+            this.uiLabel7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel7.Location = new System.Drawing.Point(448, 123);
+            this.uiLabel7.Name = "uiLabel7";
+            this.uiLabel7.Size = new System.Drawing.Size(116, 23);
+            this.uiLabel7.TabIndex = 9;
+            this.uiLabel7.Text = "钱包余额：";
             // 
             // UserManage
             // 
@@ -299,5 +311,6 @@
         private Sunny.UI.UILabel uiLabel5;
         private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UILabel uiLabel6;
+        private Sunny.UI.UILabel uiLabel7;
     }
 }

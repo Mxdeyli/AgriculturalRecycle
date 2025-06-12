@@ -182,6 +182,70 @@ namespace AgriculturalRecycle
             this.Hide();
             device_store.Show();
         }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            uiImageButton4.Enabled = true;
+            uiImageButton5.Enabled = false;
+            uiImageButton6.Enabled = false;
+            uiImageButton4.Visible = true;
+            uiImageButton5.Visible = false;
+            uiImageButton6.Visible = false;
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            uiImageButton4.Enabled = false;
+            uiImageButton5.Enabled = true;
+            uiImageButton6.Enabled = false;
+            uiImageButton4.Visible = false;
+            uiImageButton5.Visible = true;
+            uiImageButton6.Visible = false;
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            uiImageButton4.Enabled = false;
+            uiImageButton5.Enabled = false;
+            uiImageButton6.Enabled = true;
+            uiImageButton4.Visible = false;
+            uiImageButton5.Visible = false;
+            uiImageButton6.Visible = true;
+        }
+
+        private void uiLabel11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiButton13_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确认退出？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void uiButton12_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确认退出账号？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Login login = new Login();
+                _currentUser.Logout();
+                this.Hide();
+                login.Show();
+
+            }
+        }
+
+        private void uiButton11_Click(object sender, EventArgs e)
+        {
+            UpdateAccount update = new UpdateAccount(_currentUser);
+            this.Hide();
+            update.Show();
+        }
     }
 
 }

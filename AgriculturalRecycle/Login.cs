@@ -10,10 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms; 
 using AgriculturalRecycle.Layout;
 using AntdUI;
+using Sunny.UI;
 
 namespace AgriculturalRecycle
 {
-    public partial class Login: Form
+    public partial class Login: UIForm
     {
         private bool isShow = true;
         public AutoSizeFormClass autoSize = new AutoSizeFormClass();

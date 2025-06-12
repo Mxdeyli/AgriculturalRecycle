@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Sunny.UI;
 
 namespace AgriculturalRecycle
 {
-    public partial class Register: Form
+    public partial class Register: UIForm
     {
         private const int ValidCodeLength = 4;//验证码长度        
         private String strValidCode = "";//验证码   

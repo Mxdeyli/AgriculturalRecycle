@@ -124,6 +124,7 @@
     <Compile Include="Edit.Designer.cs">
       <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Encryption\BCrypt_encryption.cs" />
     <Compile Include="Layout\AutoControlSize.cs" />
     <Compile Include="Layout\AutoSizeFormClass.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -296,7 +297,7 @@
     <None Include="Resources\返回 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Encryption\" />
+    <None Include="Resources\changxiao.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Zushebei.png" />
@@ -357,6 +358,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\关机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changxiao2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changxiao3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-4dce2e5a38616c78.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

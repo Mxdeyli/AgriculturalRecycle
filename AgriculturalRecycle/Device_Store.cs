@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AntdUI;
 using Sunny.UI;
+using MySql.Data.MySqlClient;
 
 namespace AgriculturalRecycle
 {
@@ -20,6 +21,15 @@ namespace AgriculturalRecycle
         {
             InitializeComponent();
             _currentUser = user;
+            this.KeyDown += new KeyEventHandler(Device_Store_KeyDown);
+        }
+
+        private void Device_Store_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                uiButton4_Click(sender, e);
+            }
         }
 
         public void CreateDevice(string sql)
@@ -30,7 +40,7 @@ namespace AgriculturalRecycle
             {
                 UIPanel panel = new UIPanel();
                 panel.Size = new Size(272, 300);
-                panel.Margin = new Padding(0);
+                panel.Margin = new Padding(5);
 
                 UIImageButton imgBtn = new UIImageButton();
                 imgBtn.Size = new Size(196, 196);
@@ -52,21 +62,24 @@ namespace AgriculturalRecycle
                 UILabel nameLabel = new UILabel();
                 nameLabel.Text = row["ProductName"]?.ToString();
                 nameLabel.AutoSize = false;
-                nameLabel.Size = new Size(panel.Width - 8, 18);
+                nameLabel.BackColor=Color.Transparent;
+                nameLabel.Size = new Size(panel.Width - 5, 18);
                 nameLabel.TextAlign = ContentAlignment.MiddleCenter;
                 nameLabel.Location = new Point(0, imgBtn.Bottom + 5);
 
                 UILabel priceLabel = new UILabel();
                 priceLabel.Text = "￥" + row["Price"]?.ToString();
                 priceLabel.AutoSize = false;
-                priceLabel.Size = new Size(panel.Width - 8, 18);
+                priceLabel.BackColor = Color.Transparent;
+                priceLabel.Size = new Size(panel.Width - 5, 18);
                 priceLabel.TextAlign = ContentAlignment.MiddleCenter;
                 priceLabel.Location = new Point(0, nameLabel.Bottom + 2);
 
                 UILabel categoryLabel = new UILabel();
                 categoryLabel.Text = row["CategoryName"]?.ToString();
                 categoryLabel.AutoSize = false;
-                categoryLabel.Size = new Size(panel.Width - 8, 18);
+                categoryLabel.BackColor = Color.Transparent;
+                categoryLabel.Size = new Size(panel.Width - 5, 18);
                 categoryLabel.TextAlign = ContentAlignment.MiddleCenter;
                 categoryLabel.Location = new Point(0, priceLabel.Bottom + 2);
 
@@ -111,6 +124,7 @@ namespace AgriculturalRecycle
                 uiComboBox1.Items.Add(arr[i]);
             }
             uiComboBox1.SelectedIndex = 0;
+
         }
 
         private void uiComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -201,6 +215,64 @@ namespace AgriculturalRecycle
             {
                 Application.Exit();
             }
+        }
+
+        private void uiRadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            uiImageButton1.Enabled = true;
+            uiImageButton3.Enabled = false;
+            uiImageButton4.Enabled = false;
+            uiImageButton1.Visible = true;
+            uiImageButton3.Visible = false;
+            uiImageButton4.Visible = false;
+        }
+
+        private void uiRadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            uiImageButton1.Enabled = false;
+            uiImageButton3.Enabled = true;
+            uiImageButton4.Enabled = false;
+            uiImageButton1.Visible = false;
+            uiImageButton3.Visible = true;
+            uiImageButton4.Visible = false;
+        }
+
+        private void uiRadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            uiImageButton1.Enabled = false;
+            uiImageButton3.Enabled = false;
+            uiImageButton4.Enabled = true;
+            uiImageButton1.Visible = false;
+            uiImageButton3.Visible = false;
+            uiImageButton4.Visible = true;
+        }
+
+        private void uiButton4_Click(object sender, EventArgs e)
+        {
+            string ProductName = uiTextBox1.Text;
+            string sqlsearch = @"
+        SELECT 
+            p.ProductName, 
+            p.Price, 
+            c.CategoryName, 
+            i.ImageURL
+        FROM equipmentproducts p
+        LEFT JOIN equipmentcategories c ON p.CategoryID = c.CategoryID
+        LEFT JOIN productimages i ON p.ProductID = i.ProductID where p.ProductName like '%" + ProductName + "%'";
+            ClearPanel();
+            CreateDevice(sqlsearch);
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+            UserManage userManage = new UserManage(_currentUser);
+            this.Hide();
+            userManage.Show();
+        }
+
+        private void uiLabel4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

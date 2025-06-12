@@ -93,6 +93,16 @@ namespace AgriculturalRecycle.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _4dce2e5a38616c78 {
+            get {
+                object obj = ResourceManager.GetObject("-4dce2e5a38616c78", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap _66257063_p0 {
             get {
                 object obj = ResourceManager.GetObject("66257063_p0", resourceCulture);
@@ -126,6 +136,36 @@ namespace AgriculturalRecycle.Properties {
         internal static System.Drawing.Bitmap alipay {
             get {
                 object obj = ResourceManager.GetObject("alipay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap changxiao {
+            get {
+                object obj = ResourceManager.GetObject("changxiao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap changxiao2 {
+            get {
+                object obj = ResourceManager.GetObject("changxiao2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap changxiao3 {
+            get {
+                object obj = ResourceManager.GetObject("changxiao3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

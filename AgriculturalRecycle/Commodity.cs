@@ -7,14 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sunny.UI;
 
 namespace AgriculturalRecycle
 {
-    public partial class Commodity: Form
+    public partial class Commodity: UIForm
     {
         public Commodity()
         {
             InitializeComponent();
+        }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Commodity_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

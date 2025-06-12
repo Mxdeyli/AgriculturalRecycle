@@ -59,7 +59,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("华文琥珀", 40F);
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(634, 72);
+            this.label1.Location = new System.Drawing.Point(671, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(298, 69);
             this.label1.TabIndex = 0;
@@ -247,7 +247,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(3, 38);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 63);
             this.button1.TabIndex = 14;
@@ -262,7 +262,7 @@
             this.label7.ForeColor = System.Drawing.Color.Red;
             this.label7.Location = new System.Drawing.Point(841, 253);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 15);
+            this.label7.Size = new System.Drawing.Size(69, 20);
             this.label7.TabIndex = 15;
             this.label7.Text = "label7";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -277,7 +277,7 @@
             this.label8.ForeColor = System.Drawing.Color.Red;
             this.label8.Location = new System.Drawing.Point(841, 341);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 15);
+            this.label8.Size = new System.Drawing.Size(69, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "label8";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -291,7 +291,7 @@
             this.label9.ForeColor = System.Drawing.Color.Red;
             this.label9.Location = new System.Drawing.Point(841, 436);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 15);
+            this.label9.Size = new System.Drawing.Size(69, 20);
             this.label9.TabIndex = 17;
             this.label9.Text = "label9";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -305,7 +305,7 @@
             this.label10.ForeColor = System.Drawing.Color.Red;
             this.label10.Location = new System.Drawing.Point(833, 524);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 15);
+            this.label10.Size = new System.Drawing.Size(79, 20);
             this.label10.TabIndex = 18;
             this.label10.Text = "label10";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -319,7 +319,7 @@
             this.label11.ForeColor = System.Drawing.Color.Red;
             this.label11.Location = new System.Drawing.Point(713, 631);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(63, 15);
+            this.label11.Size = new System.Drawing.Size(79, 20);
             this.label11.TabIndex = 19;
             this.label11.Text = "label11";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -348,8 +348,7 @@
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::AgriculturalRecycle.Properties.Resources._3ecc63fc13fbae52;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 953);
@@ -373,11 +372,11 @@
             this.Controls.Add(this.uiTextBox2);
             this.Controls.Add(this.uiTextBox1);
             this.Controls.Add(this.label1);
-            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Register";
             this.Text = "注册";
+            this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 1582, 953);
             this.Load += new System.EventHandler(this.Register_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

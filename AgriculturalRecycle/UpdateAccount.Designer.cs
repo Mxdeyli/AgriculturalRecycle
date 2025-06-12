@@ -54,7 +54,7 @@
             this.uiLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.uiLabel1.Font = new System.Drawing.Font("华文琥珀", 40F);
             this.uiLabel1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.uiLabel1.Location = new System.Drawing.Point(644, 56);
+            this.uiLabel1.Location = new System.Drawing.Point(703, 56);
             this.uiLabel1.Name = "uiLabel1";
             this.uiLabel1.Size = new System.Drawing.Size(337, 84);
             this.uiLabel1.TabIndex = 0;
@@ -212,7 +212,7 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(913, 255);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
+            this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 11;
             this.label1.Text = "label1";
             this.label1.Visible = false;
@@ -224,7 +224,7 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(913, 362);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 15);
+            this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 12;
             this.label2.Text = "label2";
             this.label2.Visible = false;
@@ -236,7 +236,7 @@
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(913, 470);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 15);
+            this.label3.Size = new System.Drawing.Size(69, 20);
             this.label3.TabIndex = 13;
             this.label3.Text = "label3";
             this.label3.Visible = false;
@@ -248,7 +248,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Location = new System.Drawing.Point(3, 38);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 63);
             this.button1.TabIndex = 15;
@@ -296,8 +296,7 @@
             // 
             // UpdateAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::AgriculturalRecycle.Properties.Resources._3ecc63fc13fbae52;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 953);
@@ -319,10 +318,10 @@
             this.Controls.Add(this.uiLabel3);
             this.Controls.Add(this.uiLabel2);
             this.Controls.Add(this.uiLabel1);
-            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpdateAccount";
             this.Text = "修改账户";
+            this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 1582, 953);
             this.Load += new System.EventHandler(this.UpdateAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
