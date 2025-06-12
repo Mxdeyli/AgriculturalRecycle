@@ -24,7 +24,8 @@ namespace AgriculturalRecycle
                 conn.Open();
                 using (var cmd = new MySqlCommand(sql, conn))
                 {
-                    cmd.Parameters.AddRange(parameters);
+                    if (parameters != null && parameters.Length > 0)
+                        cmd.Parameters.AddRange(parameters);
                     DataTable dt = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                     adapter.Fill(dt);
@@ -40,7 +41,8 @@ namespace AgriculturalRecycle
                 conn.Open();
                 using (var cmd = new MySqlCommand(sql, conn))
                 {
-                    cmd.Parameters.AddRange(parameters);
+                    if (parameters != null && parameters.Length > 0)
+                        cmd.Parameters.AddRange(parameters);
                     return cmd.ExecuteNonQuery();
                 }
             }

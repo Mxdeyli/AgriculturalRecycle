@@ -325,5 +325,38 @@
   <ItemGroup>
     <None Include="Resources\-789f511feeb8b0f1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuoyun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP-C.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R-C.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanlun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeyajiegan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yumi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuzhi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\junbang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fenbian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dakun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关机.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

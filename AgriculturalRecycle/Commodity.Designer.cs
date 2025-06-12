@@ -29,20 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Commodity));
-            this.uiPanel1 = new Sunny.UI.UIPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // uiPanel1
+            // flowLayoutPanel1
             // 
-            this.uiPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.uiPanel1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiPanel1.Location = new System.Drawing.Point(330, 0);
-            this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(941, 952);
-            this.uiPanel1.TabIndex = 0;
-            this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(259, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1060, 954);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // Commodity
             // 
@@ -51,7 +46,8 @@
             this.BackgroundImage = global::AgriculturalRecycle.Properties.Resources._789f511feeb8b0f1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 953);
-            this.Controls.Add(this.uiPanel1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Commodity";
             this.Text = "Commodity";
@@ -61,6 +57,6 @@
 
         #endregion
 
-        private Sunny.UI.UIPanel uiPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

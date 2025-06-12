@@ -29,13 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shopping_Cart));
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(265, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1048, 954);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // Shopping_Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AgriculturalRecycle.Properties.Resources._789f511feeb8b0f1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 953);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Shopping_Cart";
             this.Text = "Shopping_Cart";
@@ -44,5 +55,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

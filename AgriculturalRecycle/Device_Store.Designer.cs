@@ -33,18 +33,28 @@
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.uiPanel2 = new Sunny.UI.UIPanel();
+            this.uiLabel4 = new Sunny.UI.UILabel();
+            this.uiLabel3 = new Sunny.UI.UILabel();
+            this.uiLabel2 = new Sunny.UI.UILabel();
+            this.uiImageButton2 = new Sunny.UI.UIImageButton();
             this.uiPanel1 = new Sunny.UI.UIPanel();
-            this.uiButton1 = new Sunny.UI.UIButton();
-            this.uiImageButton1 = new Sunny.UI.UIImageButton();
-            this.uiRadioButton1 = new Sunny.UI.UIRadioButton();
-            this.uiRadioButton2 = new Sunny.UI.UIRadioButton();
+            this.uiButton5 = new Sunny.UI.UIButton();
             this.uiRadioButton3 = new Sunny.UI.UIRadioButton();
+            this.uiRadioButton2 = new Sunny.UI.UIRadioButton();
+            this.uiRadioButton1 = new Sunny.UI.UIRadioButton();
+            this.uiImageButton1 = new Sunny.UI.UIImageButton();
+            this.uiButton1 = new Sunny.UI.UIButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.uiPanel4 = new Sunny.UI.UIPanel();
-            this.uiButton2 = new Sunny.UI.UIButton();
+            this.uiButton4 = new Sunny.UI.UIButton();
+            this.uiTextBox1 = new Sunny.UI.UITextBox();
+            this.uiComboBox1 = new Sunny.UI.UIComboBox();
             this.uiButton3 = new Sunny.UI.UIButton();
+            this.uiButton2 = new Sunny.UI.UIButton();
             this.uiPanel3.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.uiPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiImageButton2)).BeginInit();
             this.uiPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -55,12 +65,13 @@
             // 
             this.uiPanel3.Controls.Add(this.uiLabel1);
             this.uiPanel3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiPanel3.Location = new System.Drawing.Point(4, 752);
+            this.uiPanel3.Location = new System.Drawing.Point(4, 810);
             this.uiPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel3.Name = "uiPanel3";
             this.uiPanel3.Size = new System.Drawing.Size(1123, 144);
             this.uiPanel3.TabIndex = 5;
+            this.uiPanel3.Text = null;
             this.uiPanel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // uiLabel1
@@ -84,23 +95,72 @@
             this.flowLayoutPanel2.Controls.Add(this.uiPanel2);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 462);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(280, 282);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(280, 340);
             this.flowLayoutPanel2.TabIndex = 3;
             // 
             // uiPanel2
             // 
+            this.uiPanel2.Controls.Add(this.uiLabel4);
+            this.uiPanel2.Controls.Add(this.uiLabel3);
+            this.uiPanel2.Controls.Add(this.uiLabel2);
+            this.uiPanel2.Controls.Add(this.uiImageButton2);
             this.uiPanel2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPanel2.Location = new System.Drawing.Point(4, 5);
             this.uiPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel2.Name = "uiPanel2";
-            this.uiPanel2.Size = new System.Drawing.Size(272, 272);
+            this.uiPanel2.Size = new System.Drawing.Size(272, 330);
             this.uiPanel2.TabIndex = 0;
             this.uiPanel2.Text = null;
             this.uiPanel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.uiPanel2.Visible = false;
+            // 
+            // uiLabel4
+            // 
+            this.uiLabel4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel4.Location = new System.Drawing.Point(90, 251);
+            this.uiLabel4.Name = "uiLabel4";
+            this.uiLabel4.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel4.TabIndex = 3;
+            this.uiLabel4.Text = "商品价格";
+            // 
+            // uiLabel3
+            // 
+            this.uiLabel3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel3.Location = new System.Drawing.Point(90, 296);
+            this.uiLabel3.Name = "uiLabel3";
+            this.uiLabel3.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel3.TabIndex = 2;
+            this.uiLabel3.Text = "商品类别";
+            // 
+            // uiLabel2
+            // 
+            this.uiLabel2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel2.Location = new System.Drawing.Point(90, 218);
+            this.uiLabel2.Name = "uiLabel2";
+            this.uiLabel2.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel2.TabIndex = 1;
+            this.uiLabel2.Text = "商品名称";
+            // 
+            // uiImageButton2
+            // 
+            this.uiImageButton2.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.dakun;
+            this.uiImageButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.uiImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiImageButton2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiImageButton2.Location = new System.Drawing.Point(38, 19);
+            this.uiImageButton2.Name = "uiImageButton2";
+            this.uiImageButton2.Size = new System.Drawing.Size(196, 196);
+            this.uiImageButton2.TabIndex = 0;
+            this.uiImageButton2.TabStop = false;
+            this.uiImageButton2.Text = null;
             // 
             // uiPanel1
             // 
+            this.uiPanel1.Controls.Add(this.uiButton5);
             this.uiPanel1.Controls.Add(this.uiRadioButton3);
             this.uiPanel1.Controls.Add(this.uiRadioButton2);
             this.uiPanel1.Controls.Add(this.uiRadioButton1);
@@ -115,6 +175,65 @@
             this.uiPanel1.TabIndex = 2;
             this.uiPanel1.Text = "uiPanel1";
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiButton5
+            // 
+            this.uiButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiButton5.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.关机;
+            this.uiButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.uiButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiButton5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton5.Location = new System.Drawing.Point(1065, 3);
+            this.uiButton5.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton5.Name = "uiButton5";
+            this.uiButton5.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiButton5.Size = new System.Drawing.Size(55, 55);
+            this.uiButton5.TabIndex = 5;
+            this.uiButton5.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton5.Click += new System.EventHandler(this.uiButton5_Click);
+            // 
+            // uiRadioButton3
+            // 
+            this.uiRadioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiRadioButton3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiRadioButton3.Location = new System.Drawing.Point(675, 337);
+            this.uiRadioButton3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiRadioButton3.Name = "uiRadioButton3";
+            this.uiRadioButton3.Size = new System.Drawing.Size(29, 29);
+            this.uiRadioButton3.TabIndex = 4;
+            // 
+            // uiRadioButton2
+            // 
+            this.uiRadioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiRadioButton2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiRadioButton2.Location = new System.Drawing.Point(550, 337);
+            this.uiRadioButton2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiRadioButton2.Name = "uiRadioButton2";
+            this.uiRadioButton2.Size = new System.Drawing.Size(29, 29);
+            this.uiRadioButton2.TabIndex = 3;
+            // 
+            // uiRadioButton1
+            // 
+            this.uiRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiRadioButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiRadioButton1.Location = new System.Drawing.Point(423, 337);
+            this.uiRadioButton1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiRadioButton1.Name = "uiRadioButton1";
+            this.uiRadioButton1.Size = new System.Drawing.Size(29, 29);
+            this.uiRadioButton1.TabIndex = 2;
+            // 
+            // uiImageButton1
+            // 
+            this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiImageButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiImageButton1.Location = new System.Drawing.Point(210, 0);
+            this.uiImageButton1.Name = "uiImageButton1";
+            this.uiImageButton1.Size = new System.Drawing.Size(726, 335);
+            this.uiImageButton1.TabIndex = 1;
+            this.uiImageButton1.TabStop = false;
+            this.uiImageButton1.Text = null;
+            this.uiImageButton1.Click += new System.EventHandler(this.uiImageButton1_Click);
             // 
             // uiButton1
             // 
@@ -134,48 +253,6 @@
             this.uiButton1.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
             // 
-            // uiImageButton1
-            // 
-            this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiImageButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiImageButton1.Location = new System.Drawing.Point(210, 0);
-            this.uiImageButton1.Name = "uiImageButton1";
-            this.uiImageButton1.Size = new System.Drawing.Size(726, 335);
-            this.uiImageButton1.TabIndex = 1;
-            this.uiImageButton1.TabStop = false;
-            this.uiImageButton1.Text = null;
-            this.uiImageButton1.Click += new System.EventHandler(this.uiImageButton1_Click);
-            // 
-            // uiRadioButton1
-            // 
-            this.uiRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiRadioButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiRadioButton1.Location = new System.Drawing.Point(423, 337);
-            this.uiRadioButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiRadioButton1.Name = "uiRadioButton1";
-            this.uiRadioButton1.Size = new System.Drawing.Size(29, 29);
-            this.uiRadioButton1.TabIndex = 2;
-            // 
-            // uiRadioButton2
-            // 
-            this.uiRadioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiRadioButton2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiRadioButton2.Location = new System.Drawing.Point(550, 337);
-            this.uiRadioButton2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiRadioButton2.Name = "uiRadioButton2";
-            this.uiRadioButton2.Size = new System.Drawing.Size(29, 29);
-            this.uiRadioButton2.TabIndex = 3;
-            // 
-            // uiRadioButton3
-            // 
-            this.uiRadioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiRadioButton3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiRadioButton3.Location = new System.Drawing.Point(675, 337);
-            this.uiRadioButton3.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiRadioButton3.Name = "uiRadioButton3";
-            this.uiRadioButton3.Size = new System.Drawing.Size(29, 29);
-            this.uiRadioButton3.TabIndex = 4;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
@@ -192,6 +269,9 @@
             // 
             // uiPanel4
             // 
+            this.uiPanel4.Controls.Add(this.uiButton4);
+            this.uiPanel4.Controls.Add(this.uiTextBox1);
+            this.uiPanel4.Controls.Add(this.uiComboBox1);
             this.uiPanel4.Controls.Add(this.uiButton3);
             this.uiPanel4.Controls.Add(this.uiButton2);
             this.uiPanel4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -201,19 +281,55 @@
             this.uiPanel4.Name = "uiPanel4";
             this.uiPanel4.Size = new System.Drawing.Size(1123, 70);
             this.uiPanel4.TabIndex = 6;
+            this.uiPanel4.Text = null;
             this.uiPanel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiButton2
+            // uiButton4
             // 
-            this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Location = new System.Drawing.Point(13, 17);
-            this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton2.Name = "uiButton2";
-            this.uiButton2.Size = new System.Drawing.Size(100, 35);
-            this.uiButton2.TabIndex = 0;
-            this.uiButton2.Text = "uiButton2";
-            this.uiButton2.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton4.Location = new System.Drawing.Point(841, 16);
+            this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton4.Name = "uiButton4";
+            this.uiButton4.Size = new System.Drawing.Size(69, 35);
+            this.uiButton4.TabIndex = 4;
+            this.uiButton4.Text = "搜索";
+            this.uiButton4.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
+            // uiTextBox1
+            // 
+            this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox1.Location = new System.Drawing.Point(298, 17);
+            this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox1.Name = "uiTextBox1";
+            this.uiTextBox1.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox1.ShowText = false;
+            this.uiTextBox1.Size = new System.Drawing.Size(532, 34);
+            this.uiTextBox1.TabIndex = 3;
+            this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox1.Watermark = "";
+            // 
+            // uiComboBox1
+            // 
+            this.uiComboBox1.DataSource = null;
+            this.uiComboBox1.FillColor = System.Drawing.Color.White;
+            this.uiComboBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiComboBox1.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.uiComboBox1.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.uiComboBox1.Location = new System.Drawing.Point(948, 17);
+            this.uiComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiComboBox1.Name = "uiComboBox1";
+            this.uiComboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiComboBox1.Size = new System.Drawing.Size(150, 35);
+            this.uiComboBox1.SymbolSize = 24;
+            this.uiComboBox1.TabIndex = 2;
+            this.uiComboBox1.Text = "uiComboBox1";
+            this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiComboBox1.Watermark = "";
+            this.uiComboBox1.SelectedIndexChanged += new System.EventHandler(this.uiComboBox1_SelectedIndexChanged);
             // 
             // uiButton3
             // 
@@ -224,8 +340,20 @@
             this.uiButton3.Name = "uiButton3";
             this.uiButton3.Size = new System.Drawing.Size(100, 35);
             this.uiButton3.TabIndex = 1;
-            this.uiButton3.Text = "uiButton3";
+            this.uiButton3.Text = "我的购物车";
             this.uiButton3.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
+            // uiButton2
+            // 
+            this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton2.Location = new System.Drawing.Point(13, 17);
+            this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton2.Name = "uiButton2";
+            this.uiButton2.Size = new System.Drawing.Size(100, 35);
+            this.uiButton2.TabIndex = 0;
+            this.uiButton2.Text = "我的账户";
+            this.uiButton2.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // Device_Store
             // 
@@ -237,8 +365,11 @@
             this.Name = "Device_Store";
             this.Text = "Device_Store";
             this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 1837, 1186);
+            this.Load += new System.EventHandler(this.Device_Store_Load);
             this.uiPanel3.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.uiPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uiImageButton2)).EndInit();
             this.uiPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -264,5 +395,13 @@
         private Sunny.UI.UIPanel uiPanel4;
         private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UIButton uiButton3;
+        private Sunny.UI.UILabel uiLabel2;
+        private Sunny.UI.UIImageButton uiImageButton2;
+        private Sunny.UI.UIButton uiButton4;
+        private Sunny.UI.UITextBox uiTextBox1;
+        private Sunny.UI.UIComboBox uiComboBox1;
+        private Sunny.UI.UILabel uiLabel3;
+        private Sunny.UI.UILabel uiLabel4;
+        private Sunny.UI.UIButton uiButton5;
     }
 }

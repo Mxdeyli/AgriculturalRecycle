@@ -121,6 +121,9 @@
   <data name="weixinpay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\weixinpay.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="yeyajiegan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yeyajiegan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="返回 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\返回 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,8 +136,20 @@
   <data name="248878-106" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\248878-106.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="-789f511feeb8b0f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\-789f511feeb8b0f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sanlun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sanlun.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OIP-C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OIP-C.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Zushebei" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Zushebei.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dakun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dakun.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="返回" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\返回.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,8 +157,20 @@
   <data name="weixinpay1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\weixinpay1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="66257063_p0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\66257063_p0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fenbian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fenbian.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R-C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R-C.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="-3ecc63fc13fbae52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\-3ecc63fc13fbae52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tuoyun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tuoyun.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yumi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yumi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="-76e802b42db9a6ce" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\-76e802b42db9a6ce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,16 +178,22 @@
   <data name="Guan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Guan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="66257063_p0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\66257063_p0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="junbang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\junbang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="alipay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alipay.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="-3ecc63fc13fbae52" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\-3ecc63fc13fbae52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shuzhi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shuzhi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="store" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\store.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="-789f511feeb8b0f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\-789f511feeb8b0f1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="关机" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\关机.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
