@@ -118,6 +118,7 @@
     <Compile Include="Commodity.Designer.cs">
       <DependentUpon>Commodity.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataBase\Item.cs" />
     <Compile Include="Edit.cs">
       <SubType>Form</SubType>
     </Compile>

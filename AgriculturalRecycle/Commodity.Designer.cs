@@ -90,7 +90,7 @@
             // 
             this.uiLabel4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel4.Location = new System.Drawing.Point(817, 145);
+            this.uiLabel4.Location = new System.Drawing.Point(667, 145);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(100, 23);
             this.uiLabel4.TabIndex = 0;
@@ -102,7 +102,7 @@
             this.uiLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.uiLabel3.Location = new System.Drawing.Point(275, 197);
             this.uiLabel3.Name = "uiLabel3";
-            this.uiLabel3.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel3.Size = new System.Drawing.Size(267, 23);
             this.uiLabel3.TabIndex = 5;
             this.uiLabel3.Text = "商品价格";
             // 
@@ -112,18 +112,18 @@
             this.uiLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.uiLabel2.Location = new System.Drawing.Point(275, 145);
             this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel2.Size = new System.Drawing.Size(294, 23);
             this.uiLabel2.TabIndex = 4;
             this.uiLabel2.Text = "商品库存";
             // 
             // uiLabel1
             // 
             this.uiLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.uiLabel1.Font = new System.Drawing.Font("华文琥珀", 45F);
+            this.uiLabel1.Font = new System.Drawing.Font("华文中宋", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.uiLabel1.Location = new System.Drawing.Point(262, 37);
             this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(655, 77);
+            this.uiLabel1.Size = new System.Drawing.Size(655, 87);
             this.uiLabel1.TabIndex = 3;
             this.uiLabel1.Text = "商品名称";
             // 
@@ -139,6 +139,7 @@
             this.uiButton2.TabIndex = 2;
             this.uiButton2.Text = "加入购物车";
             this.uiButton2.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
             // 
             // uiButton1
             // 
@@ -162,6 +163,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(227, 227);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // uiPanel2
             // 

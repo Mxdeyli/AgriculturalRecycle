@@ -32,6 +32,7 @@ namespace AgriculturalRecycle
             }
         }
 
+
         public void CreateDevice(string sql)
         {
             DataTable dt = DBhelper.ExecuteQuery(sql, null);
@@ -62,7 +63,7 @@ namespace AgriculturalRecycle
                 UILabel nameLabel = new UILabel();
                 nameLabel.Text = row["ProductName"]?.ToString();
                 nameLabel.AutoSize = false;
-                nameLabel.BackColor=Color.Transparent;
+                nameLabel.BackColor = Color.Transparent;
                 nameLabel.Size = new Size(panel.Width - 5, 18);
                 nameLabel.TextAlign = ContentAlignment.MiddleCenter;
                 nameLabel.Location = new Point(0, imgBtn.Bottom + 5);
@@ -82,6 +83,21 @@ namespace AgriculturalRecycle
                 categoryLabel.Size = new Size(panel.Width - 5, 18);
                 categoryLabel.TextAlign = ContentAlignment.MiddleCenter;
                 categoryLabel.Location = new Point(0, priceLabel.Bottom + 2);
+
+                imgBtn.Click += (s, e) =>
+                {
+
+                    int equipmentId = row.Table.Columns.Contains("EquipmentID") && row["EquipmentID"] != DBNull.Value ? Convert.ToInt32(row["EquipmentID"]) : 0;
+                    string productName = row["ProductName"]?.ToString();
+                    int productId = row.Table.Columns.Contains("ProductID") && row["ProductID"] != DBNull.Value ? Convert.ToInt32(row["ProductID"]) : 0;
+                    int categoryId = row.Table.Columns.Contains("CategoryID") && row["CategoryID"] != DBNull.Value ? Convert.ToInt32(row["CategoryID"]) : 0;
+
+                    Item item = new Item(equipmentId, productName, productId, categoryId);
+                    List<Item> itemList = new List<Item> { item };
+                    Commodity commodityForm = new Commodity(_currentUser, item);
+                    commodityForm.Show();
+                    this.Hide();
+                };
 
                 panel.Controls.Add(imgBtn);
                 panel.Controls.Add(nameLabel);
@@ -135,6 +151,9 @@ namespace AgriculturalRecycle
                         ClearPanel();
                         string sql = @"
         SELECT 
+            p.ProductID, 
+            p.EquipmentID,
+            p.CategoryID,
             p.ProductName, 
             p.Price, 
             c.CategoryName, 
@@ -147,6 +166,9 @@ namespace AgriculturalRecycle
                         ClearPanel();
                         string sql2 = @"
         SELECT 
+            p.ProductID, 
+            p.EquipmentID,
+            p.CategoryID,
             p.ProductName, 
             p.Price, 
             c.CategoryName, 
@@ -159,6 +181,9 @@ namespace AgriculturalRecycle
                         ClearPanel();
                         string sql3 = @"
         SELECT 
+            p.ProductID, 
+            p.EquipmentID,
+            p.CategoryID,
             p.ProductName, 
             p.Price, 
             c.CategoryName, 
@@ -171,6 +196,9 @@ namespace AgriculturalRecycle
                         ClearPanel();
                         string sql4 = @"
         SELECT 
+            p.ProductID, 
+            p.EquipmentID,
+            p.CategoryID,
             p.ProductName, 
             p.Price, 
             c.CategoryName, 
@@ -183,6 +211,9 @@ namespace AgriculturalRecycle
                         ClearPanel();
                         string sql5 = @"
         SELECT 
+            p.ProductID, 
+            p.EquipmentID,
+            p.CategoryID,
             p.ProductName, 
             p.Price, 
             c.CategoryName, 
@@ -195,6 +226,9 @@ namespace AgriculturalRecycle
                         ClearPanel();
                         string sql6 = @"
         SELECT 
+            p.ProductID, 
+            p.EquipmentID,
+            p.CategoryID,
             p.ProductName, 
             p.Price, 
             c.CategoryName, 
