@@ -33,6 +33,11 @@
             this.uiButton2 = new Sunny.UI.UIButton();
             this.uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.uiPanel4 = new Sunny.UI.UIPanel();
+            this.uiLabel11 = new Sunny.UI.UILabel();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.uiPanel1 = new Sunny.UI.UIPanel();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -41,6 +46,19 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.uiPanel6 = new Sunny.UI.UIPanel();
+            this.uiButton16 = new Sunny.UI.UIButton();
+            this.uiRichTextBox1 = new Sunny.UI.UIRichTextBox();
+            this.uiLabel15 = new Sunny.UI.UILabel();
+            this.uiPanel5 = new Sunny.UI.UIPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.uiPanel7 = new Sunny.UI.UIPanel();
+            this.uiButton17 = new Sunny.UI.UIButton();
+            this.uiLabel17 = new Sunny.UI.UILabel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.uiLabel16 = new Sunny.UI.UILabel();
+            this.uiLabel14 = new Sunny.UI.UILabel();
+            this.uiLabel13 = new Sunny.UI.UILabel();
             this.uiButton3 = new Sunny.UI.UIButton();
             this.uiButton4 = new Sunny.UI.UIButton();
             this.uiButton5 = new Sunny.UI.UIButton();
@@ -49,11 +67,6 @@
             this.uiButton8 = new Sunny.UI.UIButton();
             this.uiButton9 = new Sunny.UI.UIButton();
             this.uiButton10 = new Sunny.UI.UIButton();
-            this.uiPanel4 = new Sunny.UI.UIPanel();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.uiLabel11 = new Sunny.UI.UILabel();
             this.uiAvatar1 = new Sunny.UI.UIAvatar();
             this.uiImageButton4 = new Sunny.UI.UIImageButton();
             this.uiImageButton5 = new Sunny.UI.UIImageButton();
@@ -61,6 +74,8 @@
             this.uiImageButton3 = new Sunny.UI.UIImageButton();
             this.uiImageButton2 = new Sunny.UI.UIImageButton();
             this.uiImageButton1 = new Sunny.UI.UIImageButton();
+            this.uiButton18 = new Sunny.UI.UIButton();
+            this.uiAvatar2 = new Sunny.UI.UIAvatar();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.uiPanel3 = new Sunny.UI.UIPanel();
             this.uiLabel10 = new Sunny.UI.UILabel();
@@ -80,25 +95,22 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.uiButton11 = new Sunny.UI.UIButton();
             this.uiLabel12 = new Sunny.UI.UILabel();
+            this.uiButton14 = new Sunny.UI.UIButton();
+            this.uiButton11 = new Sunny.UI.UIButton();
+            this.uiButton15 = new Sunny.UI.UIButton();
             this.uiButton12 = new Sunny.UI.UIButton();
             this.uiButton13 = new Sunny.UI.UIButton();
-            this.uiButton14 = new Sunny.UI.UIButton();
-            this.uiButton15 = new Sunny.UI.UIButton();
-            this.uiLabel13 = new Sunny.UI.UILabel();
-            this.uiPanel5 = new Sunny.UI.UIPanel();
-            this.uiLabel14 = new Sunny.UI.UILabel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.uiPanel6 = new Sunny.UI.UIPanel();
-            this.uiLabel15 = new Sunny.UI.UILabel();
-            this.uiRichTextBox1 = new Sunny.UI.UIRichTextBox();
-            this.uiButton16 = new Sunny.UI.UIButton();
+            this.uiLabel18 = new Sunny.UI.UILabel();
             this.uiTabControlMenu1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.uiPanel4.SuspendLayout();
             this.uiPanel1.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.uiPanel4.SuspendLayout();
+            this.uiPanel6.SuspendLayout();
+            this.uiPanel5.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.uiPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton6)).BeginInit();
@@ -112,8 +124,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.uiPanel5.SuspendLayout();
-            this.uiPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // uiButton1
@@ -177,6 +187,76 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "首页";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // uiPanel4
+            // 
+            this.uiPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.uiPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiPanel4.Controls.Add(this.uiLabel11);
+            this.uiPanel4.Controls.Add(this.uiImageButton4);
+            this.uiPanel4.Controls.Add(this.uiImageButton5);
+            this.uiPanel4.Controls.Add(this.uiImageButton6);
+            this.uiPanel4.Controls.Add(this.radioButton4);
+            this.uiPanel4.Controls.Add(this.radioButton5);
+            this.uiPanel4.Controls.Add(this.radioButton6);
+            this.uiPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.uiPanel4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiPanel4.Location = new System.Drawing.Point(0, 459);
+            this.uiPanel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiPanel4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiPanel4.Name = "uiPanel4";
+            this.uiPanel4.Radius = 1;
+            this.uiPanel4.Size = new System.Drawing.Size(724, 430);
+            this.uiPanel4.TabIndex = 1;
+            this.uiPanel4.Text = null;
+            this.uiPanel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiLabel11
+            // 
+            this.uiLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.uiLabel11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uiLabel11.Font = new System.Drawing.Font("华文琥珀", 45F);
+            this.uiLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.uiLabel11.Location = new System.Drawing.Point(225, 0);
+            this.uiLabel11.Name = "uiLabel11";
+            this.uiLabel11.Size = new System.Drawing.Size(336, 79);
+            this.uiLabel11.TabIndex = 6;
+            this.uiLabel11.Text = "商城热销";
+            this.uiLabel11.Click += new System.EventHandler(this.uiLabel11_Click);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radioButton4.Location = new System.Drawing.Point(447, 405);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(17, 16);
+            this.radioButton4.TabIndex = 0;
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(350, 405);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(17, 16);
+            this.radioButton5.TabIndex = 2;
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Checked = true;
+            this.radioButton6.Location = new System.Drawing.Point(251, 405);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(17, 16);
+            this.radioButton6.TabIndex = 1;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
             // uiPanel1
             // 
@@ -264,6 +344,8 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabPage5.Controls.Add(this.uiButton18);
             this.tabPage5.Controls.Add(this.uiPanel6);
             this.tabPage5.Controls.Add(this.uiPanel5);
             this.tabPage5.Controls.Add(this.uiLabel13);
@@ -272,7 +354,174 @@
             this.tabPage5.Size = new System.Drawing.Size(1443, 889);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "留言建议";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // uiPanel6
+            // 
+            this.uiPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiPanel6.Controls.Add(this.uiButton16);
+            this.uiPanel6.Controls.Add(this.uiRichTextBox1);
+            this.uiPanel6.Controls.Add(this.uiLabel15);
+            this.uiPanel6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiPanel6.Location = new System.Drawing.Point(4, 652);
+            this.uiPanel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiPanel6.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiPanel6.Name = "uiPanel6";
+            this.uiPanel6.Size = new System.Drawing.Size(1433, 228);
+            this.uiPanel6.TabIndex = 2;
+            this.uiPanel6.Text = null;
+            this.uiPanel6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiButton16
+            // 
+            this.uiButton16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiButton16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton16.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton16.Location = new System.Drawing.Point(1329, 10);
+            this.uiButton16.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton16.Name = "uiButton16";
+            this.uiButton16.Size = new System.Drawing.Size(100, 35);
+            this.uiButton16.TabIndex = 3;
+            this.uiButton16.Text = "发送留言";
+            this.uiButton16.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton16.Click += new System.EventHandler(this.uiButton16_Click);
+            // 
+            // uiRichTextBox1
+            // 
+            this.uiRichTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiRichTextBox1.FillColor = System.Drawing.Color.White;
+            this.uiRichTextBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiRichTextBox1.Location = new System.Drawing.Point(4, 48);
+            this.uiRichTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiRichTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiRichTextBox1.Name = "uiRichTextBox1";
+            this.uiRichTextBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.uiRichTextBox1.ShowText = false;
+            this.uiRichTextBox1.Size = new System.Drawing.Size(1425, 175);
+            this.uiRichTextBox1.TabIndex = 2;
+            this.uiRichTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiLabel15
+            // 
+            this.uiLabel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiLabel15.Font = new System.Drawing.Font("华文琥珀", 22.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel15.Location = new System.Drawing.Point(7, 9);
+            this.uiLabel15.Name = "uiLabel15";
+            this.uiLabel15.Size = new System.Drawing.Size(278, 36);
+            this.uiLabel15.TabIndex = 1;
+            this.uiLabel15.Text = "您的留言：";
+            // 
+            // uiPanel5
+            // 
+            this.uiPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiPanel5.Controls.Add(this.flowLayoutPanel2);
+            this.uiPanel5.Controls.Add(this.uiLabel14);
+            this.uiPanel5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiPanel5.Location = new System.Drawing.Point(4, 77);
+            this.uiPanel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiPanel5.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiPanel5.Name = "uiPanel5";
+            this.uiPanel5.Size = new System.Drawing.Size(1432, 570);
+            this.uiPanel5.TabIndex = 1;
+            this.uiPanel5.Text = null;
+            this.uiPanel5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.flowLayoutPanel2.Controls.Add(this.uiPanel7);
+            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 56);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1426, 511);
+            this.flowLayoutPanel2.TabIndex = 1;
+            this.flowLayoutPanel2.WrapContents = false;
+            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
+            // 
+            // uiPanel7
+            // 
+            this.uiPanel7.Controls.Add(this.uiButton17);
+            this.uiPanel7.Controls.Add(this.uiLabel17);
+            this.uiPanel7.Controls.Add(this.flowLayoutPanel3);
+            this.uiPanel7.Controls.Add(this.uiLabel16);
+            this.uiPanel7.Controls.Add(this.uiAvatar2);
+            this.uiPanel7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiPanel7.Location = new System.Drawing.Point(4, 5);
+            this.uiPanel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiPanel7.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiPanel7.Name = "uiPanel7";
+            this.uiPanel7.Size = new System.Drawing.Size(1404, 153);
+            this.uiPanel7.TabIndex = 0;
+            this.uiPanel7.Text = null;
+            this.uiPanel7.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiButton17
+            // 
+            this.uiButton17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton17.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton17.Location = new System.Drawing.Point(1285, 60);
+            this.uiButton17.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton17.Name = "uiButton17";
+            this.uiButton17.Size = new System.Drawing.Size(100, 35);
+            this.uiButton17.TabIndex = 4;
+            this.uiButton17.Text = "uiButton17";
+            this.uiButton17.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
+            // uiLabel17
+            // 
+            this.uiLabel17.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel17.Location = new System.Drawing.Point(1285, 127);
+            this.uiLabel17.Name = "uiLabel17";
+            this.uiLabel17.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel17.TabIndex = 3;
+            this.uiLabel17.Text = "uiLabel17";
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(78, 35);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1149, 115);
+            this.flowLayoutPanel3.TabIndex = 2;
+            // 
+            // uiLabel16
+            // 
+            this.uiLabel16.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel16.Location = new System.Drawing.Point(78, 3);
+            this.uiLabel16.Name = "uiLabel16";
+            this.uiLabel16.Size = new System.Drawing.Size(139, 29);
+            this.uiLabel16.TabIndex = 1;
+            this.uiLabel16.Text = "用户1";
+            // 
+            // uiLabel14
+            // 
+            this.uiLabel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiLabel14.Font = new System.Drawing.Font("华文琥珀", 22.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel14.Location = new System.Drawing.Point(7, 7);
+            this.uiLabel14.Name = "uiLabel14";
+            this.uiLabel14.Size = new System.Drawing.Size(278, 46);
+            this.uiLabel14.TabIndex = 0;
+            this.uiLabel14.Text = "大家的留言：";
+            // 
+            // uiLabel13
+            // 
+            this.uiLabel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiLabel13.Font = new System.Drawing.Font("华文琥珀", 40F);
+            this.uiLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel13.Location = new System.Drawing.Point(3, 0);
+            this.uiLabel13.Name = "uiLabel13";
+            this.uiLabel13.Size = new System.Drawing.Size(1181, 84);
+            this.uiLabel13.TabIndex = 0;
+            this.uiLabel13.Text = "请为平台优化留下您宝贵的建议吧！";
             // 
             // uiButton3
             // 
@@ -365,8 +614,10 @@
             this.uiButton9.Name = "uiButton9";
             this.uiButton9.Size = new System.Drawing.Size(148, 66);
             this.uiButton9.TabIndex = 10;
-            this.uiButton9.Text = "用户管理";
+            this.uiButton9.Text = "商品管理";
             this.uiButton9.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton9.Visible = false;
+            this.uiButton9.Click += new System.EventHandler(this.uiButton9_Click);
             // 
             // uiButton10
             // 
@@ -378,78 +629,10 @@
             this.uiButton10.Name = "uiButton10";
             this.uiButton10.Size = new System.Drawing.Size(148, 66);
             this.uiButton10.TabIndex = 11;
-            this.uiButton10.Text = "管理员账户";
+            this.uiButton10.Text = "用户管理";
             this.uiButton10.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            // 
-            // uiPanel4
-            // 
-            this.uiPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.uiPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.uiPanel4.Controls.Add(this.uiLabel11);
-            this.uiPanel4.Controls.Add(this.uiImageButton4);
-            this.uiPanel4.Controls.Add(this.uiImageButton5);
-            this.uiPanel4.Controls.Add(this.uiImageButton6);
-            this.uiPanel4.Controls.Add(this.radioButton4);
-            this.uiPanel4.Controls.Add(this.radioButton5);
-            this.uiPanel4.Controls.Add(this.radioButton6);
-            this.uiPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.uiPanel4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiPanel4.Location = new System.Drawing.Point(0, 459);
-            this.uiPanel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiPanel4.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiPanel4.Name = "uiPanel4";
-            this.uiPanel4.Radius = 1;
-            this.uiPanel4.Size = new System.Drawing.Size(724, 430);
-            this.uiPanel4.TabIndex = 1;
-            this.uiPanel4.Text = null;
-            this.uiPanel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton4.Location = new System.Drawing.Point(447, 405);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(17, 16);
-            this.radioButton4.TabIndex = 0;
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(350, 405);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(17, 16);
-            this.radioButton5.TabIndex = 2;
-            this.radioButton5.UseVisualStyleBackColor = true;
-            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Checked = true;
-            this.radioButton6.Location = new System.Drawing.Point(251, 405);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(17, 16);
-            this.radioButton6.TabIndex = 1;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.UseVisualStyleBackColor = true;
-            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
-            // 
-            // uiLabel11
-            // 
-            this.uiLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.uiLabel11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.uiLabel11.Font = new System.Drawing.Font("华文琥珀", 45F);
-            this.uiLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.uiLabel11.Location = new System.Drawing.Point(225, 0);
-            this.uiLabel11.Name = "uiLabel11";
-            this.uiLabel11.Size = new System.Drawing.Size(336, 79);
-            this.uiLabel11.TabIndex = 6;
-            this.uiLabel11.Text = "商城热销";
-            this.uiLabel11.Click += new System.EventHandler(this.uiLabel11_Click);
+            this.uiButton10.Visible = false;
+            this.uiButton10.Click += new System.EventHandler(this.uiButton10_Click);
             // 
             // uiAvatar1
             // 
@@ -474,11 +657,12 @@
             this.uiImageButton4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiImageButton4.Location = new System.Drawing.Point(3, 82);
             this.uiImageButton4.Name = "uiImageButton4";
-            this.uiImageButton4.Size = new System.Drawing.Size(725, 320);
+            this.uiImageButton4.Size = new System.Drawing.Size(718, 320);
             this.uiImageButton4.TabIndex = 5;
             this.uiImageButton4.TabStop = false;
             this.uiImageButton4.Text = null;
             this.uiImageButton4.Visible = false;
+            this.uiImageButton4.Click += new System.EventHandler(this.uiImageButton4_Click);
             // 
             // uiImageButton5
             // 
@@ -496,6 +680,7 @@
             this.uiImageButton5.TabStop = false;
             this.uiImageButton5.Text = null;
             this.uiImageButton5.Visible = false;
+            this.uiImageButton5.Click += new System.EventHandler(this.uiImageButton5_Click);
             // 
             // uiImageButton6
             // 
@@ -512,6 +697,7 @@
             this.uiImageButton6.TabIndex = 3;
             this.uiImageButton6.TabStop = false;
             this.uiImageButton6.Text = null;
+            this.uiImageButton6.Click += new System.EventHandler(this.uiImageButton6_Click);
             // 
             // uiImageButton3
             // 
@@ -569,10 +755,40 @@
             this.uiImageButton1.Text = null;
             this.uiImageButton1.Click += new System.EventHandler(this.uiImageButton1_Click);
             // 
+            // uiButton18
+            // 
+            this.uiButton18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiButton18.BackgroundImage = global::AgriculturalRecycle.Properties.Resources.刷新;
+            this.uiButton18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.uiButton18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiButton18.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton18.Location = new System.Drawing.Point(1367, 3);
+            this.uiButton18.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton18.Name = "uiButton18";
+            this.uiButton18.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiButton18.Size = new System.Drawing.Size(66, 66);
+            this.uiButton18.TabIndex = 3;
+            this.uiButton18.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton18.Click += new System.EventHandler(this.uiButton18_Click);
+            // 
+            // uiAvatar2
+            // 
+            this.uiAvatar2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiAvatar2.Icon = Sunny.UI.UIAvatar.UIIcon.Image;
+            this.uiAvatar2.Image = global::AgriculturalRecycle.Properties.Resources._76e802b42db9a6ce;
+            this.uiAvatar2.Location = new System.Drawing.Point(3, 3);
+            this.uiAvatar2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiAvatar2.Name = "uiAvatar2";
+            this.uiAvatar2.Size = new System.Drawing.Size(60, 60);
+            this.uiAvatar2.TabIndex = 0;
+            this.uiAvatar2.Text = "uiAvatar2";
+            // 
             // tabPage6
             // 
             this.tabPage6.BackgroundImage = global::AgriculturalRecycle.Properties.Resources._66257063_p0;
             this.tabPage6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage6.Controls.Add(this.uiLabel18);
             this.tabPage6.Controls.Add(this.uiPanel3);
             this.tabPage6.Controls.Add(this.uiLabel3);
             this.tabPage6.Controls.Add(this.uiPanel2);
@@ -798,6 +1014,31 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(662, 879);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
+            // uiLabel12
+            // 
+            this.uiLabel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.uiLabel12.Font = new System.Drawing.Font("华文琥珀", 23F);
+            this.uiLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel12.Location = new System.Drawing.Point(23, 20);
+            this.uiLabel12.Name = "uiLabel12";
+            this.uiLabel12.Size = new System.Drawing.Size(614, 41);
+            this.uiLabel12.TabIndex = 1;
+            this.uiLabel12.Text = "设置";
+            this.uiLabel12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // uiButton14
+            // 
+            this.uiButton14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.uiButton14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton14.Font = new System.Drawing.Font("华文琥珀", 18F);
+            this.uiButton14.Location = new System.Drawing.Point(23, 64);
+            this.uiButton14.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton14.Name = "uiButton14";
+            this.uiButton14.Size = new System.Drawing.Size(614, 35);
+            this.uiButton14.TabIndex = 4;
+            this.uiButton14.Text = "隐私设置";
+            this.uiButton14.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
             // uiButton11
             // 
             this.uiButton11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -812,17 +1053,19 @@
             this.uiButton11.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiButton11.Click += new System.EventHandler(this.uiButton11_Click);
             // 
-            // uiLabel12
+            // uiButton15
             // 
-            this.uiLabel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.uiLabel12.Font = new System.Drawing.Font("华文琥珀", 23F);
-            this.uiLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel12.Location = new System.Drawing.Point(23, 20);
-            this.uiLabel12.Name = "uiLabel12";
-            this.uiLabel12.Size = new System.Drawing.Size(614, 41);
-            this.uiLabel12.TabIndex = 1;
-            this.uiLabel12.Text = "设置";
-            this.uiLabel12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.uiButton15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.uiButton15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton15.Font = new System.Drawing.Font("华文琥珀", 18F);
+            this.uiButton15.Location = new System.Drawing.Point(23, 146);
+            this.uiButton15.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton15.Name = "uiButton15";
+            this.uiButton15.Size = new System.Drawing.Size(614, 35);
+            this.uiButton15.TabIndex = 5;
+            this.uiButton15.Text = "余额充值";
+            this.uiButton15.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton15.Click += new System.EventHandler(this.uiButton15_Click);
             // 
             // uiButton12
             // 
@@ -852,131 +1095,19 @@
             this.uiButton13.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiButton13.Click += new System.EventHandler(this.uiButton13_Click);
             // 
-            // uiButton14
+            // uiLabel18
             // 
-            this.uiButton14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.uiButton14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton14.Font = new System.Drawing.Font("华文琥珀", 18F);
-            this.uiButton14.Location = new System.Drawing.Point(23, 64);
-            this.uiButton14.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton14.Name = "uiButton14";
-            this.uiButton14.Size = new System.Drawing.Size(614, 35);
-            this.uiButton14.TabIndex = 4;
-            this.uiButton14.Text = "隐私设置";
-            this.uiButton14.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            // 
-            // uiButton15
-            // 
-            this.uiButton15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.uiButton15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton15.Font = new System.Drawing.Font("华文琥珀", 18F);
-            this.uiButton15.Location = new System.Drawing.Point(23, 146);
-            this.uiButton15.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton15.Name = "uiButton15";
-            this.uiButton15.Size = new System.Drawing.Size(614, 35);
-            this.uiButton15.TabIndex = 5;
-            this.uiButton15.Text = "余额充值";
-            this.uiButton15.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            // 
-            // uiLabel13
-            // 
-            this.uiLabel13.Font = new System.Drawing.Font("华文琥珀", 40F);
-            this.uiLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel13.Location = new System.Drawing.Point(3, 0);
-            this.uiLabel13.Name = "uiLabel13";
-            this.uiLabel13.Size = new System.Drawing.Size(1181, 84);
-            this.uiLabel13.TabIndex = 0;
-            this.uiLabel13.Text = "请为平台优化留下您宝贵的建议吧！";
-            // 
-            // uiPanel5
-            // 
-            this.uiPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.uiLabel18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiPanel5.Controls.Add(this.flowLayoutPanel2);
-            this.uiPanel5.Controls.Add(this.uiLabel14);
-            this.uiPanel5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiPanel5.Location = new System.Drawing.Point(4, 77);
-            this.uiPanel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiPanel5.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiPanel5.Name = "uiPanel5";
-            this.uiPanel5.Size = new System.Drawing.Size(1435, 570);
-            this.uiPanel5.TabIndex = 1;
-            this.uiPanel5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // uiLabel14
-            // 
-            this.uiLabel14.Font = new System.Drawing.Font("华文琥珀", 22.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel14.Location = new System.Drawing.Point(7, 7);
-            this.uiLabel14.Name = "uiLabel14";
-            this.uiLabel14.Size = new System.Drawing.Size(278, 46);
-            this.uiLabel14.TabIndex = 0;
-            this.uiLabel14.Text = "大家的留言：";
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 56);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1433, 511);
-            this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // uiPanel6
-            // 
-            this.uiPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiPanel6.Controls.Add(this.uiButton16);
-            this.uiPanel6.Controls.Add(this.uiRichTextBox1);
-            this.uiPanel6.Controls.Add(this.uiLabel15);
-            this.uiPanel6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiPanel6.Location = new System.Drawing.Point(4, 652);
-            this.uiPanel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiPanel6.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiPanel6.Name = "uiPanel6";
-            this.uiPanel6.Size = new System.Drawing.Size(1433, 228);
-            this.uiPanel6.TabIndex = 2;
-            this.uiPanel6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // uiLabel15
-            // 
-            this.uiLabel15.Font = new System.Drawing.Font("华文琥珀", 22.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel15.Location = new System.Drawing.Point(7, 9);
-            this.uiLabel15.Name = "uiLabel15";
-            this.uiLabel15.Size = new System.Drawing.Size(278, 36);
-            this.uiLabel15.TabIndex = 1;
-            this.uiLabel15.Text = "您的留言：";
-            // 
-            // uiRichTextBox1
-            // 
-            this.uiRichTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiRichTextBox1.FillColor = System.Drawing.Color.White;
-            this.uiRichTextBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiRichTextBox1.Location = new System.Drawing.Point(4, 48);
-            this.uiRichTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiRichTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiRichTextBox1.Name = "uiRichTextBox1";
-            this.uiRichTextBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.uiRichTextBox1.ShowText = false;
-            this.uiRichTextBox1.Size = new System.Drawing.Size(1425, 175);
-            this.uiRichTextBox1.TabIndex = 2;
-            this.uiRichTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // uiButton16
-            // 
-            this.uiButton16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiButton16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton16.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton16.Location = new System.Drawing.Point(1329, 10);
-            this.uiButton16.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton16.Name = "uiButton16";
-            this.uiButton16.Size = new System.Drawing.Size(100, 35);
-            this.uiButton16.TabIndex = 3;
-            this.uiButton16.Text = "发送留言";
-            this.uiButton16.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.uiLabel18.Font = new System.Drawing.Font("华文琥珀", 55F);
+            this.uiLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.uiLabel18.Location = new System.Drawing.Point(451, 225);
+            this.uiLabel18.Name = "uiLabel18";
+            this.uiLabel18.Size = new System.Drawing.Size(678, 91);
+            this.uiLabel18.TabIndex = 7;
+            this.uiLabel18.Text = "作者：Mxdeyli";
             // 
             // MainForm
             // 
@@ -1003,11 +1134,15 @@
             this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
             this.uiTabControlMenu1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.uiPanel4.ResumeLayout(false);
+            this.uiPanel4.PerformLayout();
             this.uiPanel1.ResumeLayout(false);
             this.uiPanel1.PerformLayout();
             this.tabPage5.ResumeLayout(false);
-            this.uiPanel4.ResumeLayout(false);
-            this.uiPanel4.PerformLayout();
+            this.uiPanel6.ResumeLayout(false);
+            this.uiPanel5.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.uiPanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton6)).EndInit();
@@ -1021,8 +1156,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.uiPanel5.ResumeLayout(false);
-            this.uiPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1095,5 +1228,13 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private Sunny.UI.UIRichTextBox uiRichTextBox1;
         private Sunny.UI.UIButton uiButton16;
+        private Sunny.UI.UIPanel uiPanel7;
+        private Sunny.UI.UIAvatar uiAvatar2;
+        private Sunny.UI.UILabel uiLabel16;
+        private Sunny.UI.UIButton uiButton17;
+        private Sunny.UI.UILabel uiLabel17;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private Sunny.UI.UIButton uiButton18;
+        private Sunny.UI.UILabel uiLabel18;
     }
 }

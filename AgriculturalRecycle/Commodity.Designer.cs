@@ -90,9 +90,9 @@
             // 
             this.uiLabel4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel4.Location = new System.Drawing.Point(667, 145);
+            this.uiLabel4.Location = new System.Drawing.Point(575, 145);
             this.uiLabel4.Name = "uiLabel4";
-            this.uiLabel4.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel4.Size = new System.Drawing.Size(270, 23);
             this.uiLabel4.TabIndex = 0;
             this.uiLabel4.Text = "商品类别";
             // 
@@ -154,6 +154,7 @@
             this.uiButton1.TabIndex = 1;
             this.uiButton1.Text = "立即购买";
             this.uiButton1.TipsFont = new System.Drawing.Font("华文琥珀", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
             // 
             // pictureBox1
             // 

@@ -11,14 +11,14 @@ using Sunny.UI;
 
 namespace AgriculturalRecycle
 {
-    public partial class Device_Manage: UIForm
+    public partial class OrderHistory: UIForm
     {
-        public Device_Manage()
+        public OrderHistory()
         {
             InitializeComponent();
         }
 
-        private void Device_Manage_Load(object sender, EventArgs e)
+        private void OrderHistory_Load(object sender, EventArgs e)
         {
 
         }

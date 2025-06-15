@@ -49,6 +49,15 @@
             this.uiButton1 = new Sunny.UI.UIButton();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.uiAvatar1 = new Sunny.UI.UIAvatar();
+            this.uiLabel9 = new Sunny.UI.UILabel();
+            this.uiRichTextBox2 = new Sunny.UI.UIRichTextBox();
+            this.uiLabel10 = new Sunny.UI.UILabel();
+            this.uiLine1 = new Sunny.UI.UILine();
+            this.uiLine2 = new Sunny.UI.UILine();
+            this.uiLabel11 = new Sunny.UI.UILabel();
+            this.uiTextBox6 = new Sunny.UI.UITextBox();
+            this.uiLabel12 = new Sunny.UI.UILabel();
+            this.uiTextBox7 = new Sunny.UI.UITextBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.uiPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -104,6 +113,15 @@
             // uiPanel1
             // 
             this.uiPanel1.BackColor = System.Drawing.Color.Silver;
+            this.uiPanel1.Controls.Add(this.uiTextBox7);
+            this.uiPanel1.Controls.Add(this.uiLabel12);
+            this.uiPanel1.Controls.Add(this.uiTextBox6);
+            this.uiPanel1.Controls.Add(this.uiLabel11);
+            this.uiPanel1.Controls.Add(this.uiLine2);
+            this.uiPanel1.Controls.Add(this.uiLabel10);
+            this.uiPanel1.Controls.Add(this.uiLine1);
+            this.uiPanel1.Controls.Add(this.uiRichTextBox2);
+            this.uiPanel1.Controls.Add(this.uiLabel9);
             this.uiPanel1.Controls.Add(this.uiButton3);
             this.uiPanel1.Controls.Add(this.uiRichTextBox1);
             this.uiPanel1.Controls.Add(this.uiTextBox5);
@@ -129,7 +147,7 @@
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel1.Name = "uiPanel1";
             this.uiPanel1.Radius = 1;
-            this.uiPanel1.Size = new System.Drawing.Size(860, 1022);
+            this.uiPanel1.Size = new System.Drawing.Size(870, 1555);
             this.uiPanel1.TabIndex = 1;
             this.uiPanel1.Text = null;
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -322,6 +340,113 @@
             this.uiAvatar1.TabIndex = 3;
             this.uiAvatar1.Text = "uiAvatar1";
             // 
+            // uiLabel9
+            // 
+            this.uiLabel9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel9.Location = new System.Drawing.Point(110, 1242);
+            this.uiLabel9.Name = "uiLabel9";
+            this.uiLabel9.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel9.TabIndex = 23;
+            this.uiLabel9.Text = "收货地址";
+            this.uiLabel9.Click += new System.EventHandler(this.uiLabel9_Click);
+            // 
+            // uiRichTextBox2
+            // 
+            this.uiRichTextBox2.FillColor = System.Drawing.Color.White;
+            this.uiRichTextBox2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiRichTextBox2.Location = new System.Drawing.Point(114, 1293);
+            this.uiRichTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiRichTextBox2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiRichTextBox2.Name = "uiRichTextBox2";
+            this.uiRichTextBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.uiRichTextBox2.ShowText = false;
+            this.uiRichTextBox2.Size = new System.Drawing.Size(359, 206);
+            this.uiRichTextBox2.TabIndex = 24;
+            this.uiRichTextBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiLabel10
+            // 
+            this.uiLabel10.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel10.Location = new System.Drawing.Point(238, 1004);
+            this.uiLabel10.Name = "uiLabel10";
+            this.uiLabel10.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel10.TabIndex = 26;
+            this.uiLabel10.Text = "快递信息";
+            // 
+            // uiLine1
+            // 
+            this.uiLine1.BackColor = System.Drawing.Color.Transparent;
+            this.uiLine1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLine1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLine1.Location = new System.Drawing.Point(17, 985);
+            this.uiLine1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine1.Name = "uiLine1";
+            this.uiLine1.Size = new System.Drawing.Size(616, 13);
+            this.uiLine1.TabIndex = 25;
+            // 
+            // uiLine2
+            // 
+            this.uiLine2.BackColor = System.Drawing.Color.Transparent;
+            this.uiLine2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLine2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLine2.Location = new System.Drawing.Point(16, 1027);
+            this.uiLine2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine2.Name = "uiLine2";
+            this.uiLine2.Size = new System.Drawing.Size(616, 13);
+            this.uiLine2.TabIndex = 27;
+            // 
+            // uiLabel11
+            // 
+            this.uiLabel11.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel11.Location = new System.Drawing.Point(110, 1037);
+            this.uiLabel11.Name = "uiLabel11";
+            this.uiLabel11.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel11.TabIndex = 28;
+            this.uiLabel11.Text = "收货人";
+            // 
+            // uiTextBox6
+            // 
+            this.uiTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox6.Location = new System.Drawing.Point(114, 1067);
+            this.uiTextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox6.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox6.Name = "uiTextBox6";
+            this.uiTextBox6.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox6.ShowText = false;
+            this.uiTextBox6.Size = new System.Drawing.Size(359, 41);
+            this.uiTextBox6.TabIndex = 29;
+            this.uiTextBox6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox6.Watermark = "";
+            // 
+            // uiLabel12
+            // 
+            this.uiLabel12.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel12.Location = new System.Drawing.Point(110, 1130);
+            this.uiLabel12.Name = "uiLabel12";
+            this.uiLabel12.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel12.TabIndex = 30;
+            this.uiLabel12.Text = "手机号码";
+            // 
+            // uiTextBox7
+            // 
+            this.uiTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiTextBox7.Location = new System.Drawing.Point(114, 1173);
+            this.uiTextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox7.MinimumSize = new System.Drawing.Size(1, 16);
+            this.uiTextBox7.Name = "uiTextBox7";
+            this.uiTextBox7.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox7.ShowText = false;
+            this.uiTextBox7.Size = new System.Drawing.Size(359, 41);
+            this.uiTextBox7.TabIndex = 31;
+            this.uiTextBox7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTextBox7.Watermark = "";
+            // 
             // Edit
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -362,5 +487,14 @@
         private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UIButton uiButton3;
         private Sunny.UI.UIAvatar uiAvatar1;
+        private Sunny.UI.UIRichTextBox uiRichTextBox2;
+        private Sunny.UI.UILabel uiLabel9;
+        private Sunny.UI.UITextBox uiTextBox7;
+        private Sunny.UI.UILabel uiLabel12;
+        private Sunny.UI.UITextBox uiTextBox6;
+        private Sunny.UI.UILabel uiLabel11;
+        private Sunny.UI.UILine uiLine2;
+        private Sunny.UI.UILabel uiLabel10;
+        private Sunny.UI.UILine uiLine1;
     }
 }

@@ -308,5 +308,17 @@ namespace AgriculturalRecycle
         {
 
         }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            Shopping_Cart shopping_Cart = new Shopping_Cart(_currentUser);
+            this.Hide();
+            shopping_Cart.Show();
+        }
+
+        private void uiButton6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

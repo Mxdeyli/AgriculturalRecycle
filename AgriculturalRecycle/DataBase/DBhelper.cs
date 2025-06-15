@@ -61,5 +61,32 @@ namespace AgriculturalRecycle
                 }
             }
         }
+
+        public static object ExecuteScalar(string sql, MySqlParameter mySqlParameter)
+        {
+            using (var conn = GetConnection())
+            {
+                conn.Open();
+                using (var cmd = new MySqlCommand(sql, conn))
+                {
+                    cmd.Parameters.Add(mySqlParameter);
+                    return cmd.ExecuteScalar();
+                }
+            }
+        }
+
+        internal static int ExecuteScalar(string sqlcheck, MySqlParameter mySqlParameter1, MySqlParameter mySqlParameter2)
+        {
+            using (var conn = GetConnection())
+            {
+                conn.Open();
+                using (var cmd = new MySqlCommand(sqlcheck, conn))
+                {
+                    cmd.Parameters.Add(mySqlParameter1);
+                    cmd.Parameters.Add(mySqlParameter2);
+                    return Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+        }
     }
 }

@@ -47,6 +47,9 @@ namespace AgriculturalRecycle
                 uiTextBox3.Text = dt.Rows[0]["region"].ToString();
                 uiTextBox4.Text = dt.Rows[0]["Age"].ToString();
                 uiTextBox5.Text = dt.Rows[0]["Hobby"].ToString();
+                uiRichTextBox2.Text = dt.Rows[0]["ShippingAddress"].ToString();
+                uiTextBox6.Text = dt.Rows[0]["Consignee"].ToString();
+                uiTextBox7.Text = dt.Rows[0]["Phone"].ToString();
             }
         }
 
@@ -57,7 +60,16 @@ namespace AgriculturalRecycle
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-            string sql = "update UserInfo set UserName=@username, Personalized_Signature=@signature, Contact_Way=@contact, region=@region, Age=@age, Hobby=@hobby where UserID=@userid";
+            string sql = @"update UserInfo set 
+                           UserName=@username, 
+                           Personalized_Signature=@signature, 
+                           Contact_Way=@contact, 
+                           region=@region, 
+                           Age=@age, 
+                           Hobby=@hobby,
+                           ShippingAddress=@address 
+                           Consignee=@consignee 
+                           Phone=@phone where UserID=@userid";
             MySqlParameter[] parameters = new MySqlParameter[]
             {
                 new MySqlParameter("@username", uiTextBox1.Text),
@@ -66,7 +78,10 @@ namespace AgriculturalRecycle
                 new MySqlParameter("@region", uiTextBox3.Text),
                 new MySqlParameter("@age", uiTextBox4.Text),
                 new MySqlParameter("@hobby", uiTextBox5.Text),
-                new MySqlParameter("@userid", _currentuser.UserID)
+                new MySqlParameter("@userid", _currentuser.UserID),
+                new MySqlParameter("@address", uiRichTextBox2.Text),
+                new MySqlParameter("@consignee", uiTextBox6.Text),
+                new MySqlParameter("@phone", uiTextBox7.Text)
             };
             DBhelper.ExecuteNonQuery(sql, parameters);
             MessageBox.Show("修改成功！");
@@ -88,6 +103,11 @@ namespace AgriculturalRecycle
                 };
                 DBhelper.ExecuteNonQuery(sql, parameters);
             }
+        }
+
+        private void uiLabel9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

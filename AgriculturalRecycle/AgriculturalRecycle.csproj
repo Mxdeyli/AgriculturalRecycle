@@ -60,6 +60,9 @@
     <Reference Include="MySql.Data, Version=9.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.9.3.0\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="SunnyUI, Version=3.8.4.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb, processorArchitecture=MSIL">
       <HintPath>..\packages\SunnyUI.3.8.4\lib\net472\SunnyUI.dll</HintPath>
     </Reference>
@@ -112,6 +115,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Balance_Recharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balance_Recharge.Designer.cs">
+      <DependentUpon>Balance_Recharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckInfoForm.Designer.cs">
+      <DependentUpon>CheckInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Commodity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +143,12 @@
     <Compile Include="Encryption\BCrypt_encryption.cs" />
     <Compile Include="Layout\AutoControlSize.cs" />
     <Compile Include="Layout\AutoSizeFormClass.cs" />
+    <Compile Include="OrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderHistory.Designer.cs">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -218,6 +239,12 @@
     <Compile Include="UserManage.Designer.cs">
       <DependentUpon>UserManage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Balance_Recharge.resx">
+      <DependentUpon>Balance_Recharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckInfoForm.resx">
+      <DependentUpon>CheckInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Commodity.resx">
       <DependentUpon>Commodity.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainManager.resx">
       <DependentUpon>MainManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderHistory.resx">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -368,6 +398,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\-4dce2e5a38616c78.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刷新.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="image\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

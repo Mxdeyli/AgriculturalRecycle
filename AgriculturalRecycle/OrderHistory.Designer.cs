@@ -1,6 +1,6 @@
 ﻿namespace AgriculturalRecycle
 {
-    partial class Device_Manage
+    partial class OrderHistory
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderHistory));
             this.SuspendLayout();
             // 
-            // Device_Manage
+            // OrderHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1582, 953);
-            this.Name = "Device_Manage";
-            this.Text = "Device_manage";
-            this.Load += new System.EventHandler(this.Device_Manage_Load);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1600, 1000);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "OrderHistory";
+            this.Text = "OrderHistory";
+            this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 800, 450);
+            this.Load += new System.EventHandler(this.OrderHistory_Load);
             this.ResumeLayout(false);
 
         }
