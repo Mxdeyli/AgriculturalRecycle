@@ -85,7 +85,10 @@ namespace AgriculturalRecycle
                     new MySqlParameter("@Receivingtime", DateTime.Now),
                     new MySqlParameter("@Count", count),
                     new MySqlParameter("@TotalPrice", count * price));
+                string sql3 = "UPDATE EquipmentProducts SET Stock = Stock - @Count WHERE ProductID = @ProductID";
+                DBhelper.ExecuteNonQuery(sql3, new MySqlParameter("@Count", count), new MySqlParameter("@ProductID", i));
             }
+            UIMessageBox.ShowSuccess("下单成功！");
             this.Close();
         }
 

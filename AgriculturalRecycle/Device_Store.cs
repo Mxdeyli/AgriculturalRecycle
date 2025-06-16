@@ -318,7 +318,9 @@ namespace AgriculturalRecycle
 
         private void uiButton6_Click(object sender, EventArgs e)
         {
-
+            OrderHistory orderHistory = new OrderHistory(_currentUser);
+            this.Hide();
+            orderHistory.Show();
         }
     }
 }

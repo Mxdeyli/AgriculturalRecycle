@@ -122,6 +122,13 @@ namespace AgriculturalRecycle
                     }
                 }
                 catch { }
+                imageButton.Click += (s, e) =>
+                {
+                    Item item = new Item(equipmentId,productName,productId,categoryId);
+                    Commodity cd = new Commodity(_currentUser,item);
+                    this.Hide();
+                    cd.Show();
+                };
                 panel.Controls.Add(imageButton);
 
                 // 商品名称Label
@@ -363,6 +370,47 @@ namespace AgriculturalRecycle
                 return;
             }
 
+            foreach (Control control in flowLayoutPanel2.Controls)
+            {
+                if (control is Sunny.UI.UIPanel panel)
+                {
+                    Sunny.UI.UICheckBox checkBox = null;
+                    Sunny.UI.UILabel nameLabel = null;
+                    Sunny.UI.UILabel countLabel = null;
+                    foreach (Control subControl in panel.Controls)
+                    {
+                        if (subControl is Sunny.UI.UICheckBox cb)
+                            checkBox = cb;
+                        if (subControl is Sunny.UI.UILabel lbl && lbl.Name == "nameLabel")
+                            nameLabel = lbl;
+                        if (subControl is Sunny.UI.UILabel lbl2 && lbl2.Name == "countLabel")
+                            countLabel = lbl2;
+                    }
+                    if (checkBox != null && checkBox.Checked && nameLabel != null && countLabel != null)
+                    {
+                        string pname = nameLabel.Text;
+                        int buyCount = 0;
+                        int.TryParse(countLabel.Text, out buyCount);
+                        string stockSql = "SELECT ProductID, Stock FROM equipmentproducts WHERE ProductName = @pname";
+                        var stockResult = DBhelper.ExecuteQuery(stockSql, new MySqlParameter("@pname", pname));
+                        if (stockResult.Rows.Count > 0)
+                        {
+                            int stock = Convert.ToInt32(stockResult.Rows[0]["Stock"]);
+                            if (buyCount > stock)
+                            {
+                                UIMessageBox.ShowWarning($"商品【{pname}】库存不足，当前库存：{stock}，您选择了：{buyCount}");
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            UIMessageBox.ShowError($"未找到商品【{pname}】的库存信息！");
+                            return;
+                        }
+                    }
+                }
+            }
+
             string sql = "SELECT Balance FROM userinfo WHERE UserID = @uid";
             var result = DBhelper.ExecuteQuery(sql, new MySqlParameter("@uid", _currentUser.UserID));
             if (result.Rows.Count == 0)
@@ -388,7 +436,7 @@ namespace AgriculturalRecycle
 
             List<int> toDeleteProductIds = new List<int>();
             List<Control> toRemovePanels = new List<Control>();
-            List<int>toProductCounts = new List<int>();
+            List<int> toProductCounts = new List<int>();
             foreach (Control control in flowLayoutPanel2.Controls)
             {
                 if (control is Sunny.UI.UIPanel panel)
@@ -407,7 +455,7 @@ namespace AgriculturalRecycle
                             if (pidResult.Rows.Count > 0)
                                 productId = Convert.ToInt32(pidResult.Rows[0]["ProductID"]);
                         }
-                        if (subControl is Sunny.UI.UILabel lbl2 && lbl2.Name == "countLabel" && int.TryParse(lbl2.Text, out _)&&checkBox.Checked)
+                        if (subControl is Sunny.UI.UILabel lbl2 && lbl2.Name == "countLabel" && int.TryParse(lbl2.Text, out _) && checkBox.Checked)
                         {
                             int count = 0;
                             int.TryParse(lbl2.Text, out count);
@@ -423,6 +471,39 @@ namespace AgriculturalRecycle
             }
             foreach (int pid in toDeleteProductIds)
             {
+                int eid = 0;
+                string sqlsearch = "SELECT EquipmentID FROM EquipmentProducts WHERE ProductID = @pid";
+                var searchResult = DBhelper.ExecuteQuery(sqlsearch, new MySqlParameter("@uid", _currentUser.UserID), new MySqlParameter("@pid", pid));
+                if (searchResult.Rows.Count > 0)
+                {
+                    eid = Convert.ToInt32(searchResult.Rows[0]["EquipmentID"]);
+                }
+                int count = 0;
+                string sqlcount = "SELECT Count FROM UserEquipment WHERE UserID = @uid AND EquipmentID = @eid";
+                var countResult = DBhelper.ExecuteScalar(sqlcount, new MySqlParameter("@uid", _currentUser.UserID), new MySqlParameter("@eid", eid));
+                if (countResult != null && countResult.ToString() != "")
+                {
+                    count = Convert.ToInt32(countResult);
+                }
+                string sqlexit = "SELECT COUNT(*) FROM UserEquipment WHERE UserID = @uid AND EquipmentID = @eid";
+                var exitResult = DBhelper.ExecuteScalar(sqlexit, new MySqlParameter("@uid", _currentUser.UserID), new MySqlParameter("@eid", eid));
+                int exitCount = Convert.ToInt32(exitResult);
+                if (exitCount > 0)
+                {
+                    string updateSql2 = "UPDATE UserEquipment SET Count = @count WHERE UserID = @uid AND EquipmentID = @eid";
+                    DBhelper.ExecuteNonQuery(updateSql2,
+                        new MySqlParameter("@count", count+toProductCounts[toDeleteProductIds.IndexOf(pid)]),
+                        new MySqlParameter("@uid", _currentUser.UserID),
+                        new MySqlParameter("@eid", eid));
+                }
+                else
+                {
+                    string addSql = "INSERT INTO UserEquipment (UserID, EquipmentID, Count) VALUES (@uid, @eid, @qty)";
+                    DBhelper.ExecuteNonQuery(addSql,
+                        new MySqlParameter("@uid", _currentUser.UserID),
+                        new MySqlParameter("@eid", eid),
+                        new MySqlParameter("@qty", toProductCounts[toDeleteProductIds.IndexOf(pid)]));
+                }
                 string delSql = "DELETE FROM shoppingcarts WHERE UserID = @uid AND ProductID = @pid";
                 DBhelper.ExecuteNonQuery(delSql,
                     new MySqlParameter("@uid", _currentUser.UserID),
@@ -432,7 +513,7 @@ namespace AgriculturalRecycle
             {
                 flowLayoutPanel2.Controls.Remove(panel);
             }
-            CheckInfoForm cif = new CheckInfoForm(_currentUser, toProductCounts,toDeleteProductIds);
+            CheckInfoForm cif = new CheckInfoForm(_currentUser, toProductCounts, toDeleteProductIds);
             cif.Show();
             NullShoppingCart();
             UpdateChoosenum();

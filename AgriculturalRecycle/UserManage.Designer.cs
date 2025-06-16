@@ -32,6 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.uiPanel1 = new Sunny.UI.UIPanel();
+            this.uiLabel7 = new Sunny.UI.UILabel();
             this.uiLabel6 = new Sunny.UI.UILabel();
             this.uiButton2 = new Sunny.UI.UIButton();
             this.uiLabel5 = new Sunny.UI.UILabel();
@@ -42,13 +43,14 @@
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.uiAvatar1 = new Sunny.UI.UIAvatar();
             this.uiGroupBox1 = new Sunny.UI.UIGroupBox();
-            this.uiImageButton1 = new Sunny.UI.UIImageButton();
             this.uiGroupBox2 = new Sunny.UI.UIGroupBox();
             this.uiImageListBox1 = new Sunny.UI.UIImageListBox();
-            this.uiLabel7 = new Sunny.UI.UILabel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.uiImageButton1 = new Sunny.UI.UIImageButton();
             this.flowLayoutPanel1.SuspendLayout();
             this.uiPanel1.SuspendLayout();
             this.uiGroupBox1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,6 +105,16 @@
             this.uiPanel1.TabIndex = 4;
             this.uiPanel1.Text = null;
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiLabel7
+            // 
+            this.uiLabel7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel7.Location = new System.Drawing.Point(448, 123);
+            this.uiLabel7.Name = "uiLabel7";
+            this.uiLabel7.Size = new System.Drawing.Size(116, 23);
+            this.uiLabel7.TabIndex = 9;
+            this.uiLabel7.Text = "钱包余额：";
             // 
             // uiLabel6
             // 
@@ -209,29 +221,17 @@
             // 
             // uiGroupBox1
             // 
-            this.uiGroupBox1.Controls.Add(this.uiImageButton1);
+            this.uiGroupBox1.Controls.Add(this.flowLayoutPanel2);
             this.uiGroupBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiGroupBox1.Location = new System.Drawing.Point(4, 241);
             this.uiGroupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiGroupBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiGroupBox1.Name = "uiGroupBox1";
             this.uiGroupBox1.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
-            this.uiGroupBox1.Size = new System.Drawing.Size(870, 271);
+            this.uiGroupBox1.Size = new System.Drawing.Size(848, 271);
             this.uiGroupBox1.TabIndex = 1;
-            this.uiGroupBox1.Text = "设备库";
+            this.uiGroupBox1.Text = "我的设备库";
             this.uiGroupBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // uiImageButton1
-            // 
-            this.uiImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiImageButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiImageButton1.Location = new System.Drawing.Point(21, 47);
-            this.uiImageButton1.Name = "uiImageButton1";
-            this.uiImageButton1.Size = new System.Drawing.Size(100, 100);
-            this.uiImageButton1.TabIndex = 0;
-            this.uiImageButton1.TabStop = false;
-            this.uiImageButton1.Text = null;
             // 
             // uiGroupBox2
             // 
@@ -241,9 +241,9 @@
             this.uiGroupBox2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiGroupBox2.Name = "uiGroupBox2";
             this.uiGroupBox2.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
-            this.uiGroupBox2.Size = new System.Drawing.Size(870, 292);
+            this.uiGroupBox2.Size = new System.Drawing.Size(848, 292);
             this.uiGroupBox2.TabIndex = 2;
-            this.uiGroupBox2.Text = "我的产物";
+            this.uiGroupBox2.Text = "副产物分享";
             this.uiGroupBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uiImageListBox1
@@ -257,20 +257,35 @@
             this.uiImageListBox1.Name = "uiImageListBox1";
             this.uiImageListBox1.Padding = new System.Windows.Forms.Padding(2);
             this.uiImageListBox1.ShowText = false;
-            this.uiImageListBox1.Size = new System.Drawing.Size(870, 253);
+            this.uiImageListBox1.Size = new System.Drawing.Size(848, 253);
             this.uiImageListBox1.TabIndex = 3;
             this.uiImageListBox1.Text = "uiImageListBox1";
             this.uiImageListBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // uiLabel7
+            // flowLayoutPanel2
             // 
-            this.uiLabel7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel7.Location = new System.Drawing.Point(448, 123);
-            this.uiLabel7.Name = "uiLabel7";
-            this.uiLabel7.Size = new System.Drawing.Size(116, 23);
-            this.uiLabel7.TabIndex = 9;
-            this.uiLabel7.Text = "钱包余额：";
+            this.flowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.Controls.Add(this.uiImageButton1);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(10, 35);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(5);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(830, 226);
+            this.flowLayoutPanel2.TabIndex = 0;
+            this.flowLayoutPanel2.WrapContents = false;
+            // 
+            // uiImageButton1
+            // 
+            this.uiImageButton1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiImageButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiImageButton1.Location = new System.Drawing.Point(8, 8);
+            this.uiImageButton1.Name = "uiImageButton1";
+            this.uiImageButton1.Padding = new System.Windows.Forms.Padding(20);
+            this.uiImageButton1.Size = new System.Drawing.Size(210, 210);
+            this.uiImageButton1.TabIndex = 0;
+            this.uiImageButton1.TabStop = false;
+            this.uiImageButton1.Text = "uiImageButton1";
             // 
             // UserManage
             // 
@@ -288,6 +303,7 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.uiPanel1.ResumeLayout(false);
             this.uiGroupBox1.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).EndInit();
             this.ResumeLayout(false);
 
@@ -301,7 +317,6 @@
         private Sunny.UI.UIGroupBox uiGroupBox1;
         private Sunny.UI.UIGroupBox uiGroupBox2;
         private Sunny.UI.UIImageListBox uiImageListBox1;
-        private Sunny.UI.UIImageButton uiImageButton1;
         private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UILabel uiLabel2;
@@ -312,5 +327,7 @@
         private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UILabel uiLabel6;
         private Sunny.UI.UILabel uiLabel7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private Sunny.UI.UIImageButton uiImageButton1;
     }
 }

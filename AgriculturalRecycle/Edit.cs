@@ -67,8 +67,8 @@ namespace AgriculturalRecycle
                            region=@region, 
                            Age=@age, 
                            Hobby=@hobby,
-                           ShippingAddress=@address 
-                           Consignee=@consignee 
+                           ShippingAddress=@address,
+                           Consignee=@consignee,
                            Phone=@phone where UserID=@userid";
             MySqlParameter[] parameters = new MySqlParameter[]
             {
