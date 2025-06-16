@@ -46,11 +46,15 @@
             this.uiGroupBox2 = new Sunny.UI.UIGroupBox();
             this.uiImageListBox1 = new Sunny.UI.UIImageListBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.uiPanel2 = new Sunny.UI.UIPanel();
             this.uiImageButton1 = new Sunny.UI.UIImageButton();
+            this.uiLabel8 = new Sunny.UI.UILabel();
+            this.uiLabel9 = new Sunny.UI.UILabel();
             this.flowLayoutPanel1.SuspendLayout();
             this.uiPanel1.SuspendLayout();
             this.uiGroupBox1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.uiPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -266,26 +270,60 @@
             // 
             this.flowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Controls.Add(this.uiImageButton1);
+            this.flowLayoutPanel2.Controls.Add(this.uiPanel2);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(10, 35);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(5);
             this.flowLayoutPanel2.Size = new System.Drawing.Size(830, 226);
             this.flowLayoutPanel2.TabIndex = 0;
             this.flowLayoutPanel2.WrapContents = false;
+            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
+            // 
+            // uiPanel2
+            // 
+            this.uiPanel2.Controls.Add(this.uiLabel9);
+            this.uiPanel2.Controls.Add(this.uiLabel8);
+            this.uiPanel2.Controls.Add(this.uiImageButton1);
+            this.uiPanel2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiPanel2.Location = new System.Drawing.Point(9, 10);
+            this.uiPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiPanel2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiPanel2.Name = "uiPanel2";
+            this.uiPanel2.Size = new System.Drawing.Size(210, 210);
+            this.uiPanel2.TabIndex = 0;
+            this.uiPanel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // uiImageButton1
             // 
-            this.uiImageButton1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiImageButton1.Location = new System.Drawing.Point(8, 8);
+            this.uiImageButton1.Location = new System.Drawing.Point(14, 12);
             this.uiImageButton1.Name = "uiImageButton1";
-            this.uiImageButton1.Padding = new System.Windows.Forms.Padding(20);
-            this.uiImageButton1.Size = new System.Drawing.Size(210, 210);
+            this.uiImageButton1.Size = new System.Drawing.Size(180, 143);
             this.uiImageButton1.TabIndex = 0;
             this.uiImageButton1.TabStop = false;
             this.uiImageButton1.Text = "uiImageButton1";
+            // 
+            // uiLabel8
+            // 
+            this.uiLabel8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel8.Location = new System.Drawing.Point(52, 158);
+            this.uiLabel8.Name = "uiLabel8";
+            this.uiLabel8.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel8.TabIndex = 1;
+            this.uiLabel8.Text = "uiLabel8";
+            this.uiLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uiLabel9
+            // 
+            this.uiLabel9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel9.Location = new System.Drawing.Point(52, 181);
+            this.uiLabel9.Name = "uiLabel9";
+            this.uiLabel9.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel9.TabIndex = 2;
+            this.uiLabel9.Text = "uiLabel9";
             // 
             // UserManage
             // 
@@ -304,6 +342,7 @@
             this.uiPanel1.ResumeLayout(false);
             this.uiGroupBox1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.uiPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).EndInit();
             this.ResumeLayout(false);
 
@@ -328,6 +367,9 @@
         private Sunny.UI.UILabel uiLabel6;
         private Sunny.UI.UILabel uiLabel7;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UIImageButton uiImageButton1;
+        private Sunny.UI.UILabel uiLabel9;
+        private Sunny.UI.UILabel uiLabel8;
     }
 }

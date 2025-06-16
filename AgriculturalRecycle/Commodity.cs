@@ -11,6 +11,7 @@ using Sunny.UI;
 using MySql.Data.MySqlClient;
 using AntdUI;
 using Newtonsoft.Json.Linq;
+using System.Security.Cryptography;
 
 namespace AgriculturalRecycle
 {
@@ -126,7 +127,57 @@ namespace AgriculturalRecycle
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-
+            string sql = @"SELECT Balance FROM userinfo WHERE UserID = @userid";
+            double Balance = (double)DBhelper.ExecuteScalar(sql, new MySqlParameter("@userid", _currentUser.UserID));
+            if (Stock > 0)
+            {
+                if (Balance>=Price)
+                {
+                    string sqladd = @"UPDATE userinfo SET Balance = @balance WHERE UserID = @userid";
+                    DBhelper.ExecuteNonQuery(sqladd, new MySqlParameter("@balance", Balance - Price), new MySqlParameter("@userid", _currentUser.UserID));
+                    string sqlupdate = @"UPDATE equipmentproducts SET Stock = @stock WHERE ProductID = @productid";
+                    DBhelper.ExecuteNonQuery(sqlupdate, new MySqlParameter("@stock", Stock - 1), new MySqlParameter("@productid", _currentItem.ProductID));
+                    int count = 0;
+                    string sqlcount = "SELECT Count FROM UserEquipment WHERE UserID = @uid AND EquipmentID = @eid";
+                    var countResult = DBhelper.ExecuteScalar(sqlcount, new MySqlParameter("@uid", _currentUser.UserID), new MySqlParameter("@eid", _currentItem.EquipmentID));
+                    if (countResult != null && countResult.ToString() != "")
+                    {
+                        count = Convert.ToInt32(countResult);
+                    }
+                    string sqlexit = "SELECT COUNT(*) FROM UserEquipment WHERE UserID = @uid AND EquipmentID = @eid";
+                    var exitResult = DBhelper.ExecuteScalar(sqlexit, new MySqlParameter("@uid", _currentUser.UserID), new MySqlParameter("@eid", _currentItem.EquipmentID));
+                    int exitCount = Convert.ToInt32(exitResult);
+                    if (exitCount > 0)
+                    {
+                        string updateSql2 = "UPDATE UserEquipment SET Count = @count WHERE UserID = @uid AND EquipmentID = @eid";
+                        DBhelper.ExecuteNonQuery(updateSql2,
+                            new MySqlParameter("@count", count + 1),
+                            new MySqlParameter("@uid", _currentUser.UserID),
+                            new MySqlParameter("@eid", _currentItem.EquipmentID));
+                    }
+                    else
+                    {
+                        string addSql = "INSERT INTO UserEquipment (UserID, EquipmentID, Count) VALUES (@uid, @eid, @qty)";
+                        DBhelper.ExecuteNonQuery(addSql,
+                            new MySqlParameter("@uid", _currentUser.UserID),
+                        new MySqlParameter("@eid", _currentItem.EquipmentID),
+                            new MySqlParameter("@qty", 1));
+                    }
+                    UIMessageBox.ShowSuccess("购买成功！");
+                    Device_Store ds = new Device_Store(_currentUser);
+                    _currentItem.Turnout();
+                    this.Hide();
+                    ds.Show();
+                }
+                else
+                {
+                    UIMessageBox.ShowWarning("余额不足，无法购买！");
+                }
+            }
+            else
+            {
+                UIMessageBox.ShowWarning("库存不足，无法购买！");
+            }
         }
     }
 }
