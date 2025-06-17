@@ -103,6 +103,16 @@ namespace AgriculturalRecycle.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _4e20ab37b801d577 {
+            get {
+                object obj = ResourceManager.GetObject("-4e20ab37b801d577", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap _66257063_p0 {
             get {
                 object obj = ResourceManager.GetObject("66257063_p0", resourceCulture);

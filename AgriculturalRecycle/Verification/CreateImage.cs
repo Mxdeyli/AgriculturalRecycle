@@ -15,8 +15,8 @@ namespace AgriculturalRecycle
             try
             {
                 int RandAngle = 45;//随机转动角度
-                int MapWidth = (int)(strValidCode.Length * 22);
-                Bitmap map = new Bitmap(MapWidth, 40);//创建图片背景
+                int MapWidth = (int)(strValidCode.Length * 29.65);
+                Bitmap map = new Bitmap(MapWidth, 50);//创建图片背景
 
                 Graphics graph = Graphics.FromImage(map);
                 graph.Clear(Color.AliceBlue);//清除绘画面,填充背景色
@@ -45,7 +45,7 @@ namespace AgriculturalRecycle
                 {
                     int cindex = rand.Next(7);
                     int findex = rand.Next(5);
-                    Font f = new System.Drawing.Font(font[findex], 18, System.Drawing.FontStyle.Bold);//字体样式(参数2为字体大小)
+                    Font f = new System.Drawing.Font(font[findex], 28, System.Drawing.FontStyle.Bold);//字体样式(参数2为字体大小)
                     Brush b = new System.Drawing.SolidBrush(c[cindex]);
                     Point dot = new Point(16, 16);
 
