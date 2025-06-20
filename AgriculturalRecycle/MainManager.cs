@@ -285,5 +285,14 @@ namespace AgriculturalRecycle
             MessageBox.Show("密码更新成功！");
             LoadUser();
         }
+
+        private void uiButton7_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确定要退出系统吗？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

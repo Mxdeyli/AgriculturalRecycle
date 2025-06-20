@@ -267,7 +267,9 @@ namespace AgriculturalRecycle
 
         private void uiButton9_Click(object sender, EventArgs e)
         {
-
+            Device_Manage device_manage = new Device_Manage(_currentUser);
+            this.Hide();
+            device_manage.Show();
         }
 
         private void uiButton10_Click(object sender, EventArgs e)

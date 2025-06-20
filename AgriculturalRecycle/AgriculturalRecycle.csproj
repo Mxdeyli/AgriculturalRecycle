@@ -121,6 +121,12 @@
     <Compile Include="Balance_Recharge.Designer.cs">
       <DependentUpon>Balance_Recharge.cs</DependentUpon>
     </Compile>
+    <Compile Include="BoreCommodity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoreCommodity.Designer.cs">
+      <DependentUpon>BoreCommodity.cs</DependentUpon>
+    </Compile>
     <Compile Include="CheckInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,12 @@
       <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
     <Compile Include="Encryption\BCrypt_encryption.cs" />
+    <Compile Include="GiveBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiveBack.Designer.cs">
+      <DependentUpon>GiveBack.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layout\AutoControlSize.cs" />
     <Compile Include="Layout\AutoSizeFormClass.cs" />
     <Compile Include="OrderHistory.cs">
@@ -154,11 +166,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Rent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent.Designer.cs">
+      <DependentUpon>Rent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalSetting.Designer.cs">
+      <DependentUpon>RentalSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shopping_Cart.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Shopping_Cart.Designer.cs">
       <DependentUpon>Shopping_Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoldOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoldOut.Designer.cs">
+      <DependentUpon>SoldOut.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateAccount.cs">
       <SubType>Form</SubType>
@@ -192,12 +222,6 @@
     </Compile>
     <Compile Include="Device_Store.Designer.cs">
       <DependentUpon>Device_Store.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Knowledge_Graph.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Knowledge_Graph.Designer.cs">
-      <DependentUpon>Knowledge_Graph.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -242,6 +266,9 @@
     <EmbeddedResource Include="Balance_Recharge.resx">
       <DependentUpon>Balance_Recharge.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BoreCommodity.resx">
+      <DependentUpon>BoreCommodity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CheckInfoForm.resx">
       <DependentUpon>CheckInfoForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,8 +290,8 @@
     <EmbeddedResource Include="Edit.resx">
       <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Knowledge_Graph.resx">
-      <DependentUpon>Knowledge_Graph.cs</DependentUpon>
+    <EmbeddedResource Include="GiveBack.resx">
+      <DependentUpon>GiveBack.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -286,8 +313,17 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Rent.resx">
+      <DependentUpon>Rent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalSetting.resx">
+      <DependentUpon>RentalSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Shopping_Cart.resx">
       <DependentUpon>Shopping_Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoldOut.resx">
+      <DependentUpon>SoldOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
@@ -407,6 +443,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\-4e20ab37b801d577.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\67524-106.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11967b3c071dc9f9.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

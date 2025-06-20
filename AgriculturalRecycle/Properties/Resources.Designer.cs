@@ -63,6 +63,16 @@ namespace AgriculturalRecycle.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _11967b3c071dc9f9 {
+            get {
+                object obj = ResourceManager.GetObject("11967b3c071dc9f9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap _1c562cb959d87e36965291505de90d86 {
             get {
                 object obj = ResourceManager.GetObject("1c562cb959d87e36965291505de90d86", resourceCulture);
@@ -116,6 +126,16 @@ namespace AgriculturalRecycle.Properties {
         internal static System.Drawing.Bitmap _66257063_p0 {
             get {
                 object obj = ResourceManager.GetObject("66257063_p0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _67524_106 {
+            get {
+                object obj = ResourceManager.GetObject("67524-106", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
