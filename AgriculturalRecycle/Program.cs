@@ -16,6 +16,11 @@ namespace AgriculturalRecycle
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            if (string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("AGRICULTURALRECYCLE_CONNECTION_STRING")))
+            {
+                MessageBox.Show("请先配置 AGRICULTURALRECYCLE_CONNECTION_STRING。");
+                return;
+            }
             Application.Run(new Login());
         }
     }
