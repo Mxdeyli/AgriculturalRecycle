@@ -18,32 +18,39 @@ namespace AgriculturalRecycle
     {
         private readonly User _currentUser;
         private Item _currentItem;
-        private int Rental;
-        private decimal Deposit;
-        public BoreCommodity(User currentUser, Item currentItem)
+        private readonly int ownerId;
+        private readonly object listingDate;
+        private readonly decimal monthlyRent;
+        private readonly decimal deposit;
+        private readonly string duration;
+
+        public BoreCommodity(User currentUser, Item currentItem, int ownerId, object listingDate,
+            decimal monthlyRent, decimal deposit, string duration)
         {
             InitializeComponent();
             _currentUser = currentUser;
             _currentItem = currentItem;
+            this.ownerId = ownerId;
+            this.listingDate = listingDate;
+            this.monthlyRent = monthlyRent;
+            this.deposit = deposit;
+            this.duration = duration;
         }
 
         private void BoreCommodity_Load(object sender, EventArgs e)
         {
             string sql = @"
                 SELECT 
-                be.ProductID,
                 e.ProductName,
                 e.Description,
-                be.Rental,
                 e.Specification,
-                be.CategoryID,
-                be.EquipmentID,
                 c.CategoryName,
-                be.Deposit,
                 p.ImageURL
-                FROM equipmentproducts e,productimages p,equipmentcategories c,borrowequipment be
-                WHERE be.ProductID = e.ProductID AND e.ProductID = p.ProductID AND e.CategoryID = c.CategoryID AND be.EquipmentID = @equipmentID AND be.ProductID = @productID;";
-            DataTable dt = DBhelper.ExecuteQuery(sql,new MySqlParameter("@equipmentID", _currentItem.EquipmentID), new MySqlParameter("@productID", _currentItem.ProductID) );
+                FROM equipmentproducts e
+                INNER JOIN equipmentcategories c ON e.CategoryID = c.CategoryID
+                LEFT JOIN productimages p ON e.ProductID = p.ProductID
+                WHERE e.ProductID = @productId;";
+            DataTable dt = DBhelper.ExecuteQuery(sql, new MySqlParameter("@productId", _currentItem.ProductID));
             if (dt.Rows.Count > 0)
             {
                 string imageURL = dt.Rows[0]["ImageURL"].ToString();
@@ -55,8 +62,8 @@ namespace AgriculturalRecycle
                     }
                 }
                 uiLabel1.Text = _currentItem.ProductName;
-                uiLabel2.Text = "商品租金：" + dt.Rows[0]["Rental"].ToString();
-                uiLabel3.Text = "商品押金：" + dt.Rows[0]["Deposit"].ToString();
+                uiLabel2.Text = "商品租金：" + monthlyRent.ToString();
+                uiLabel3.Text = "商品押金：" + deposit.ToString();
                 uiLabel4.Text = "商品类别：" + dt.Rows[0]["CategoryName"].ToString();
                 uiLabel6.Text = dt.Rows[0]["Description"].ToString();
                 string specJson = dt.Rows[0]["Specification"].ToString();
@@ -77,14 +84,12 @@ namespace AgriculturalRecycle
                     }
                 }
                 uiLabel7.Text = specDisplay.TrimEnd();
-                Rental= int.Parse(dt.Rows[0]["Rental"].ToString());
-                Deposit = decimal.Parse(dt.Rows[0]["Deposit"].ToString());
             }
         }
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-            Rent rent = new Rent(_currentUser, _currentItem);
+            Rent rent = new Rent(_currentUser, _currentItem, ownerId, listingDate, monthlyRent, deposit, duration);
             rent.Show();
         }
 

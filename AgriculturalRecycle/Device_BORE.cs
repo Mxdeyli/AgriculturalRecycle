@@ -88,8 +88,11 @@ namespace AgriculturalRecycle
                     int categoryId = row.Table.Columns.Contains("CategoryID") && row["CategoryID"] != DBNull.Value ? Convert.ToInt32(row["CategoryID"]) : 0;
 
                     Item item = new Item(equipmentId, productName, productId, categoryId);
-                    List<Item> itemList = new List<Item> { item };
-                    BoreCommodity brcommodityForm = new BoreCommodity(_currentUser, item);
+                    int ownerId = Convert.ToInt32(row["UserID"]);
+                    decimal rent = Convert.ToDecimal(row["Rental"]);
+                    decimal deposit = row.IsNull("Deposit") ? 0 : Convert.ToDecimal(row["Deposit"]);
+                    var brcommodityForm = new BoreCommodity(_currentUser, item, ownerId, row["AddDate"],
+                        rent, deposit, row["RentalDuration"].ToString());
                     brcommodityForm.Show();
                     this.Hide();
                 };
@@ -116,6 +119,9 @@ namespace AgriculturalRecycle
         SELECT 
             pe.ProductID, 
             pe.EquipmentID,
+            pe.UserID,
+            pe.AddDate,
+            pe.Deposit,
             pe.CategoryID,
             e.EquipmentName,
             pe.Rental, 
@@ -184,6 +190,9 @@ namespace AgriculturalRecycle
         SELECT 
             pe.ProductID, 
             pe.EquipmentID,
+            pe.UserID,
+            pe.AddDate,
+            pe.Deposit,
             pe.CategoryID,
             e.EquipmentName,
             pe.Rental,
@@ -202,6 +211,9 @@ namespace AgriculturalRecycle
         SELECT 
             pe.ProductID, 
             pe.EquipmentID,
+            pe.UserID,
+            pe.AddDate,
+            pe.Deposit,
             pe.CategoryID,
             e.EquipmentName,
             pe.Rental,
@@ -220,6 +232,9 @@ namespace AgriculturalRecycle
         SELECT 
             pe.ProductID, 
             pe.EquipmentID,
+            pe.UserID,
+            pe.AddDate,
+            pe.Deposit,
             pe.CategoryID,
             e.EquipmentName,
             pe.Rental,
@@ -238,6 +253,9 @@ namespace AgriculturalRecycle
         SELECT 
             pe.ProductID, 
             pe.EquipmentID,
+            pe.UserID,
+            pe.AddDate,
+            pe.Deposit,
             pe.CategoryID,
             e.EquipmentName,
             pe.Rental,
@@ -256,6 +274,9 @@ namespace AgriculturalRecycle
         SELECT 
             pe.ProductID, 
             pe.EquipmentID,
+            pe.UserID,
+            pe.AddDate,
+            pe.Deposit,
             pe.CategoryID,
             e.EquipmentName,
             pe.Rental,
@@ -280,6 +301,9 @@ namespace AgriculturalRecycle
         SELECT 
             pe.ProductID, 
             pe.EquipmentID,
+            pe.UserID,
+            pe.AddDate,
+            pe.Deposit,
             pe.CategoryID,
             e.EquipmentName,
             pe.Rental,
